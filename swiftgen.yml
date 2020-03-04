@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - SkyEngWords/Resources/Images/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: SkyEngWords/Resources/Images/Assets.swift
+
+fonts:
+  inputs:
+    - SkyEngWords/Resources/Fonts/
+  outputs:
+    - templateName: swift4
+      output: SkyEngWords/Resources/Fonts/Fonts.swift
+
+strings:
+  inputs:
+    - SkyEngWords/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: SkyEngWords/Resources/Strings/Strings.swift
