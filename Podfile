@@ -6,6 +6,7 @@ inhibit_all_warnings!
 def utils
     pod 'SwiftGen', '~> 6.1.0'
     pod 'SwiftLint', '~> 0.30.1'
+    pod 'Moya', '~> 14.0.0'
 end
 
 def surf_utils

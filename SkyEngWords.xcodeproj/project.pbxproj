@@ -16,6 +16,8 @@
 		86E8132CED9079F00E878BBC /* SearchMeaningsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */; };
 		8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */; };
 		A2ECED989EF4D83F968A8E26 /* SearchMeaningsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */; };
+		A822398C24104C2800745E73 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822398B24104C2800745E73 /* API.swift */; };
+		A82239912410504400745E73 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82239902410504400745E73 /* Environment.swift */; };
 		A8839926241018C500C59B30 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A8839925241018C500C59B30 /* fastlane */; };
 		A8839928241018C500C59B30 /* ci in Resources */ = {isa = PBXBuildFile; fileRef = A8839927241018C500C59B30 /* ci */; };
 		A883992A241018C500C59B30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A8839929241018C500C59B30 /* Podfile */; };
@@ -36,6 +38,9 @@
 		A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */; };
 		A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B4241025D80038B1E9 /* AppRouter.swift */; };
 		A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */; };
+		A8F0B9B924104A070038B1E9 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B824104A070038B1E9 /* Word.swift */; };
+		A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BA24104A470038B1E9 /* Meaning.swift */; };
+		A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BC24104A7C0038B1E9 /* Translation.swift */; };
 		BAFE4CEB4E5D5D0EEB4516D3 /* SearchMeaningsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */; };
 		C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */; };
 		CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */; };
@@ -73,6 +78,10 @@
 		6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewInput.swift; sourceTree = "<group>"; };
 		7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenterTests.swift; sourceTree = "<group>"; };
 		89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleConfigurator.swift; sourceTree = "<group>"; };
+		A822398B24104C2800745E73 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A82239902410504400745E73 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A82239922410509600745E73 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		A82239932410512400745E73 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		A8839921241018C500C59B30 /* SkyEngWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839925241018C500C59B30 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../../fastlane; sourceTree = "<group>"; };
 		A8839927241018C500C59B30 /* ci */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ci; path = ../../ci; sourceTree = "<group>"; };
@@ -122,6 +131,9 @@
 		A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		A8F0B9B4241025D80038B1E9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterInput.swift; sourceTree = "<group>"; };
+		A8F0B9B824104A070038B1E9 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		A8F0B9BA24104A470038B1E9 /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		A8F0B9BC24104A7C0038B1E9 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleOutput.swift; sourceTree = "<group>"; };
 		C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleInput.swift; sourceTree = "<group>"; };
 		D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenter.swift; sourceTree = "<group>"; };
@@ -164,7 +176,6 @@
 				8FD404B0624E946F93234914 /* Presenter */,
 				BACD7E2792ACE38940109CBF /* View */,
 			);
-			name = SearchMeanings;
 			path = SearchMeanings;
 			sourceTree = "<group>";
 		};
@@ -181,7 +192,6 @@
 			children = (
 				89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -192,7 +202,6 @@
 				C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */,
 				B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -201,7 +210,6 @@
 			children = (
 				E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -210,8 +218,15 @@
 			children = (
 				7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A822398F24104D9200745E73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A822398B24104C2800745E73 /* API.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A8839916241018C500C59B30 = {
@@ -239,6 +254,7 @@
 		A8839923241018C500C59B30 /* SkyEngWords */ = {
 			isa = PBXGroup;
 			children = (
+				A822398F24104D9200745E73 /* Network */,
 				A883994C241018C500C59B30 /* Application */,
 				A883993F241018C500C59B30 /* Library */,
 				A883993A241018C500C59B30 /* Models */,
@@ -348,6 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				A883993C241018C500C59B30 /* .gitkeep */,
+				A8F0B9BA24104A470038B1E9 /* Meaning.swift */,
+				A8F0B9BC24104A7C0038B1E9 /* Translation.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -356,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				A883993E241018C500C59B30 /* .gitkeep */,
+				A8F0B9B824104A070038B1E9 /* Word.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -430,6 +449,9 @@
 				A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */,
 				A8F0B9B4241025D80038B1E9 /* AppRouter.swift */,
 				A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */,
+				A82239902410504400745E73 /* Environment.swift */,
+				A82239922410509600745E73 /* Development.xcconfig */,
+				A82239932410512400745E73 /* Release.xcconfig */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -494,7 +516,6 @@
 			children = (
 				3D07C1B39D23957385816399 /* SearchMeaningsViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -515,7 +536,6 @@
 				6C177954FA5C2F9A9D331327 /* Presenter */,
 				E327D8389EC9073D0651D3E5 /* View */,
 			);
-			name = SearchMeanings;
 			path = SearchMeanings;
 			sourceTree = "<group>";
 		};
@@ -524,7 +544,6 @@
 			children = (
 				4125634065F991237B40C819 /* SearchMeaningsModuleConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -536,7 +555,6 @@
 				6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */,
 				32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -546,7 +564,6 @@
 				130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */,
 				062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -769,6 +786,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A822398C24104C2800745E73 /* API.swift in Sources */,
+				A82239912410504400745E73 /* Environment.swift in Sources */,
 				A8839957241018C500C59B30 /* Assets.swift in Sources */,
 				A883995E241018C500C59B30 /* Colors.swift in Sources */,
 				A8839959241018C500C59B30 /* Fonts.swift in Sources */,
@@ -778,11 +797,14 @@
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
 				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
 				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
+				A8F0B9B924104A070038B1E9 /* Word.swift in Sources */,
 				8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */,
+				A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */,
 				86E8132CED9079F00E878BBC /* SearchMeaningsRouter.swift in Sources */,
 				F00B02B3734BDA79A4423D27 /* SearchMeaningsRouterInput.swift in Sources */,
 				FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */,
 				145FB02795B7A272E5CD1A81 /* SearchMeaningsModuleInput.swift in Sources */,
+				A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */,
 				1C85C740E2BF3F5B8403A923 /* SearchMeaningsModuleOutput.swift in Sources */,
 				CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */,
 				CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */,
@@ -943,7 +965,7 @@
 		};
 		A8839989241018C600C59B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */;
+			baseConfigurationReference = A82239922410509600745E73 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -961,7 +983,7 @@
 		};
 		A883998A241018C600C59B30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */;
+			baseConfigurationReference = A82239932410512400745E73 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
