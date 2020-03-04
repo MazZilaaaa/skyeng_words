@@ -1,5 +1,5 @@
 //
-//  SearchWordsRouter.swift
+//  SearchMeaningsRouter.swift
 //  SkyEngWords
 //
 //  Created by Alexandr on 04/03/2020.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-final class SearchWordsRouter: SearchWordsRouterInput {
+final class SearchMeaningsRouter: SearchMeaningsRouterInput {
 
 	// MARK: - Properties
 
     weak var view: ModuleTransitionable?
 
-	// MARK: - SearchWordsRouterInput
+	// MARK: - SearchMeaningsRouterInput
 
 }

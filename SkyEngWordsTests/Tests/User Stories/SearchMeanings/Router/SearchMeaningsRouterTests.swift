@@ -1,5 +1,5 @@
 //
-//  SearchWordsRouterTests.swift
+//  SearchMeaningsRouterTests.swift
 //  SkyEngWords
 //
 //  Created by Alexandr on 04/03/2020.
@@ -9,18 +9,18 @@
 import XCTest
 @testable import SkyEngWords
 
-final class SearchWordsRouterTests: XCTestCase {
+final class SearchMeaningsRouterTests: XCTestCase {
 
 	// MARK: - Properties
 
     private var view: MockModuleTransitionable?
-    private var router: SearchWordsRouter?
+    private var router: SearchMeaningsRouter?
 
     // MARK: - XCTestCase
 
     override func setUp() {
         super.setUp()
-        router = SearchWordsRouter()
+        router = SearchMeaningsRouter()
         view = MockModuleTransitionable()
         router?.view = view
     }

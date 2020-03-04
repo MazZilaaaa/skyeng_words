@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06BC79AD95316C96D91ECA45 /* SearchWordsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */; };
-		18F68CCDD5708A48F13C89E5 /* SearchWordsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */; };
-		1DB95850D7E8DF902B634782 /* SearchWordsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */; };
-		416E41367B8AE588B29DF470 /* SearchWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */; };
-		4F67AF0184392A5154863CEC /* SearchWordsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */; };
-		6A60B0DBCE82092355A714B8 /* SearchWordsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */; };
+		145FB02795B7A272E5CD1A81 /* SearchMeaningsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */; };
+		1C85C740E2BF3F5B8403A923 /* SearchMeaningsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */; };
+		3F01E0D201CC3A60E7B1E685 /* SearchMeaningsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */; };
+		775D283E71A9441B28E6D1E7 /* SearchMeaningsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07C1B39D23957385816399 /* SearchMeaningsViewTests.swift */; };
 		7B380E804F6088A9822E7B66 /* Pods_SkyEngWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */; };
-		970E0B1514B6BCEBC7D95D46 /* SearchWordsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */; };
-		A157D9A17FA6BA6DFDFC278C /* SearchWordsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */; };
+		7C477CE43E83BD1A7DFF5CF2 /* SearchMeaningsModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4125634065F991237B40C819 /* SearchMeaningsModuleConfiguratorTests.swift */; };
+		86E8132CED9079F00E878BBC /* SearchMeaningsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */; };
+		8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */; };
+		A2ECED989EF4D83F968A8E26 /* SearchMeaningsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */; };
 		A8839926241018C500C59B30 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A8839925241018C500C59B30 /* fastlane */; };
 		A8839928241018C500C59B30 /* ci in Resources */ = {isa = PBXBuildFile; fileRef = A8839927241018C500C59B30 /* ci */; };
 		A883992A241018C500C59B30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A8839929241018C500C59B30 /* Podfile */; };
@@ -36,12 +36,12 @@
 		A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */; };
 		A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B4241025D80038B1E9 /* AppRouter.swift */; };
 		A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */; };
-		B04F2D4ACB8AEF39BB5971EC /* SearchWordsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */; };
-		D8766405E6003E7BE1B43EA2 /* SearchWordsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */; };
-		E35B4F9B15C9E150B09A5908 /* SearchWordsModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */; };
-		E365512F51211F12257C5A65 /* SearchWordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */; };
-		F5615F6A0992568F996FC070 /* SearchWordsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */; };
-		F88D970148E051696B38083B /* SearchWordsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */; };
+		BAFE4CEB4E5D5D0EEB4516D3 /* SearchMeaningsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */; };
+		C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */; };
+		CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */; };
+		CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */; };
+		F00B02B3734BDA79A4423D27 /* SearchMeaningsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */; };
+		FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsPresenterTests.swift; sourceTree = "<group>"; };
+		062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouterInput.swift; sourceTree = "<group>"; };
+		130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouter.swift; sourceTree = "<group>"; };
 		13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouter.swift; sourceTree = "<group>"; };
-		312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewController.swift; sourceTree = "<group>"; };
-		5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleConfiguratorTests.swift; sourceTree = "<group>"; };
-		7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewTests.swift; sourceTree = "<group>"; };
-		7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewInput.swift; sourceTree = "<group>"; };
-		80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SearchWordsViewController.storyboard; sourceTree = "<group>"; };
-		848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewOutput.swift; sourceTree = "<group>"; };
+		1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
+		32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewOutput.swift; sourceTree = "<group>"; };
+		33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SearchMeaningsViewController.storyboard; sourceTree = "<group>"; };
+		3D07C1B39D23957385816399 /* SearchMeaningsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewTests.swift; sourceTree = "<group>"; };
+		4125634065F991237B40C819 /* SearchMeaningsModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewInput.swift; sourceTree = "<group>"; };
+		7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenterTests.swift; sourceTree = "<group>"; };
+		89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleConfigurator.swift; sourceTree = "<group>"; };
 		A8839921241018C500C59B30 /* SkyEngWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839925241018C500C59B30 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../../fastlane; sourceTree = "<group>"; };
 		A8839927241018C500C59B30 /* ci */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ci; path = ../../ci; sourceTree = "<group>"; };
@@ -120,12 +122,10 @@
 		A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		A8F0B9B4241025D80038B1E9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterInput.swift; sourceTree = "<group>"; };
-		AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleOutput.swift; sourceTree = "<group>"; };
-		BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleInput.swift; sourceTree = "<group>"; };
-		BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsPresenter.swift; sourceTree = "<group>"; };
-		C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouterTests.swift; sourceTree = "<group>"; };
-		D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleConfigurator.swift; sourceTree = "<group>"; };
-		E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouterInput.swift; sourceTree = "<group>"; };
+		B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleOutput.swift; sourceTree = "<group>"; };
+		C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleInput.swift; sourceTree = "<group>"; };
+		D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenter.swift; sourceTree = "<group>"; };
+		E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouterTests.swift; sourceTree = "<group>"; };
 		F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.release.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.release.xcconfig"; sourceTree = "<group>"; };
 		F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,12 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		125DCDB084F19C255EF218F4 /* View */ = {
+		0AB0A3509CEE0F050858BAF4 /* SearchMeanings */ = {
 			isa = PBXGroup;
 			children = (
-				7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */,
+				CCEF1404C29B42F8671CBC4D /* Configurator */,
+				6F2C6D414035987BCA8B74F0 /* Router */,
+				8FD404B0624E946F93234914 /* Presenter */,
+				BACD7E2792ACE38940109CBF /* View */,
 			);
-			path = View;
+			name = SearchMeanings;
+			path = SearchMeanings;
 			sourceTree = "<group>";
 		};
 		1414C60019C088F6280F7D9F /* Frameworks */ = {
@@ -172,70 +176,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E80EFB655EC7EC8595E17A6 /* Configurator */ = {
+		28057F8C9483A79DD1192B30 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */,
+				89D6D0579A1C04162BBCCB4E /* SearchMeaningsModuleConfigurator.swift */,
 			);
+			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		310D335AF41D0DF990A9F5FB /* SearchWords */ = {
+		6C177954FA5C2F9A9D331327 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				8861133050C8EAC048D2EC83 /* Configurator */,
-				9FFB407A13D6AF64B9D2F11E /* Router */,
-				B5563DDA760B74366E0910D4 /* Presenter */,
-				125DCDB084F19C255EF218F4 /* View */,
+				D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */,
+				C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */,
+				B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */,
 			);
-			path = SearchWords;
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		4FF9F3E13C6EC18255B2AACC /* Router */ = {
+		6F2C6D414035987BCA8B74F0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */,
-				E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */,
+				E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */,
 			);
+			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
-		55D56D54776DCCB5E2C1DDD3 /* SearchWords */ = {
+		8FD404B0624E946F93234914 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1E80EFB655EC7EC8595E17A6 /* Configurator */,
-				4FF9F3E13C6EC18255B2AACC /* Router */,
-				C7488205201A8E5206F6E53F /* Presenter */,
-				630E73B5113C360D63836A42 /* View */,
+				7F7170565FA0CE44F8FCBB5D /* SearchMeaningsPresenterTests.swift */,
 			);
-			path = SearchWords;
-			sourceTree = "<group>";
-		};
-		630E73B5113C360D63836A42 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */,
-				80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */,
-				7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */,
-				848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8861133050C8EAC048D2EC83 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		9FFB407A13D6AF64B9D2F11E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */,
-			);
-			path = Router;
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A8839916241018C500C59B30 = {
@@ -462,7 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				A8839954241018C500C59B30 /* .gitkeep */,
-				55D56D54776DCCB5E2C1DDD3 /* SearchWords */,
+				C8656D76E25A35DB147E38DD /* SearchMeanings */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
@@ -508,17 +484,18 @@
 		B0A5881F9DFBEA985F470DD8 /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
-				310D335AF41D0DF990A9F5FB /* SearchWords */,
+				0AB0A3509CEE0F050858BAF4 /* SearchMeanings */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
 		};
-		B5563DDA760B74366E0910D4 /* Presenter */ = {
+		BACD7E2792ACE38940109CBF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */,
+				3D07C1B39D23957385816399 /* SearchMeaningsViewTests.swift */,
 			);
-			path = Presenter;
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		BFB9C176680FC668AB0FF489 /* Pods */ = {
@@ -530,14 +507,47 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C7488205201A8E5206F6E53F /* Presenter */ = {
+		C8656D76E25A35DB147E38DD /* SearchMeanings */ = {
 			isa = PBXGroup;
 			children = (
-				BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */,
-				BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */,
-				AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */,
+				28057F8C9483A79DD1192B30 /* Configurator */,
+				E7F3A1E42F0DD64234DCBFF3 /* Router */,
+				6C177954FA5C2F9A9D331327 /* Presenter */,
+				E327D8389EC9073D0651D3E5 /* View */,
 			);
-			path = Presenter;
+			name = SearchMeanings;
+			path = SearchMeanings;
+			sourceTree = "<group>";
+		};
+		CCEF1404C29B42F8671CBC4D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4125634065F991237B40C819 /* SearchMeaningsModuleConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E327D8389EC9073D0651D3E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */,
+				33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */,
+				6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */,
+				32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7F3A1E42F0DD64234DCBFF3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */,
+				062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */,
+			);
+			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,7 +666,7 @@
 				A8839928241018C500C59B30 /* ci in Resources */,
 				A8839950241018C500C59B30 /* Assets.xcassets in Resources */,
 				A8839926241018C500C59B30 /* fastlane in Resources */,
-				06BC79AD95316C96D91ECA45 /* SearchWordsViewController.storyboard in Resources */,
+				BAFE4CEB4E5D5D0EEB4516D3 /* SearchMeaningsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,15 +778,15 @@
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
 				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
 				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
-				F88D970148E051696B38083B /* SearchWordsModuleConfigurator.swift in Sources */,
-				E365512F51211F12257C5A65 /* SearchWordsRouter.swift in Sources */,
-				D8766405E6003E7BE1B43EA2 /* SearchWordsRouterInput.swift in Sources */,
-				F5615F6A0992568F996FC070 /* SearchWordsPresenter.swift in Sources */,
-				A157D9A17FA6BA6DFDFC278C /* SearchWordsModuleInput.swift in Sources */,
-				18F68CCDD5708A48F13C89E5 /* SearchWordsModuleOutput.swift in Sources */,
-				416E41367B8AE588B29DF470 /* SearchWordsViewController.swift in Sources */,
-				4F67AF0184392A5154863CEC /* SearchWordsViewInput.swift in Sources */,
-				1DB95850D7E8DF902B634782 /* SearchWordsViewOutput.swift in Sources */,
+				8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */,
+				86E8132CED9079F00E878BBC /* SearchMeaningsRouter.swift in Sources */,
+				F00B02B3734BDA79A4423D27 /* SearchMeaningsRouterInput.swift in Sources */,
+				FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */,
+				145FB02795B7A272E5CD1A81 /* SearchMeaningsModuleInput.swift in Sources */,
+				1C85C740E2BF3F5B8403A923 /* SearchMeaningsModuleOutput.swift in Sources */,
+				CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */,
+				CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */,
+				C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,10 +796,10 @@
 			files = (
 				A8839979241018C500C59B30 /* XCTestCase.swift in Sources */,
 				A8839974241018C500C59B30 /* SkyEngWordsTests.swift in Sources */,
-				E35B4F9B15C9E150B09A5908 /* SearchWordsModuleConfiguratorTests.swift in Sources */,
-				970E0B1514B6BCEBC7D95D46 /* SearchWordsRouterTests.swift in Sources */,
-				B04F2D4ACB8AEF39BB5971EC /* SearchWordsPresenterTests.swift in Sources */,
-				6A60B0DBCE82092355A714B8 /* SearchWordsViewTests.swift in Sources */,
+				7C477CE43E83BD1A7DFF5CF2 /* SearchMeaningsModuleConfiguratorTests.swift in Sources */,
+				3F01E0D201CC3A60E7B1E685 /* SearchMeaningsRouterTests.swift in Sources */,
+				A2ECED989EF4D83F968A8E26 /* SearchMeaningsPresenterTests.swift in Sources */,
+				775D283E71A9441B28E6D1E7 /* SearchMeaningsViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

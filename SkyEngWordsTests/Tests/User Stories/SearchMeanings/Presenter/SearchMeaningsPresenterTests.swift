@@ -1,5 +1,5 @@
 //
-//  SearchWordsPresenterTests.swift
+//  SearchMeaningsPresenterTests.swift
 //  SkyEngWords
 //
 //  Created by Alexandr on 04/03/2020.
@@ -9,11 +9,11 @@
 import XCTest
 @testable import SkyEngWords
 
-final class SearchWordsPresenterTest: XCTestCase {
+final class SearchMeaningsPresenterTest: XCTestCase {
 
     // MARK: - Properties
 
-    private var presenter: SearchWordsPresenter?
+    private var presenter: SearchMeaningsPresenter?
     private var view: MockViewController?
     private var output: MockModuleOutput?
 
@@ -21,7 +21,7 @@ final class SearchWordsPresenterTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        presenter = SearchWordsPresenter()
+        presenter = SearchMeaningsPresenter()
         presenter?.router = MockRouter()
         view = MockViewController()
         presenter?.view = view
@@ -39,13 +39,13 @@ final class SearchWordsPresenterTest: XCTestCase {
 
     // MARK: - Mocks
 
-    private final class MockRouter: SearchWordsRouterInput {
+    private final class MockRouter: SearchMeaningsRouterInput {
     }
 
-    private final class MockViewController: SearchWordsViewInput {
+    private final class MockViewController: SearchMeaningsViewInput {
     }
 
-    private final class MockModuleOutput: SearchWordsModuleOutput {
+    private final class MockModuleOutput: SearchMeaningsModuleOutput {
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  SearchWordsViewController.swift
+//  SearchMeaningsViewController.swift
 //  SkyEngWords
 //
 //  Created by Alexandr on 04/03/2020.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-final class SearchWordsViewController: UIViewController, SearchWordsViewInput, ModuleTransitionable {
+final class SearchMeaningsViewController: UIViewController, SearchMeaningsViewInput, ModuleTransitionable {
 
     // MARK: - Properties
 
-    var output: SearchWordsViewOutput?
+    var output: SearchMeaningsViewOutput?
 
     // MARK: - UIViewController
 
@@ -20,6 +20,6 @@ final class SearchWordsViewController: UIViewController, SearchWordsViewInput, M
         super.viewDidLoad()
     }
 
-    // MARK: - SearchWordsViewInput
+    // MARK: - SearchMeaningsViewInput
 
 }

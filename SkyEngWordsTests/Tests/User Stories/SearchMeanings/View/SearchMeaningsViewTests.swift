@@ -1,5 +1,5 @@
 //
-//  SearchWordsViewTests.swift
+//  SearchMeaningsViewTests.swift
 //  SkyEngWords
 //
 //  Created by Alexandr on 04/03/2020.
@@ -9,19 +9,19 @@
 import XCTest
 @testable import SkyEngWords
 
-final class SearchWordsViewTests: XCTestCase {
+final class SearchMeaningsViewTests: XCTestCase {
 
     // MARK: - Properties
 
-    private var view: SearchWordsViewController?
-    private var output: SearchWordsViewOutputMock?
+    private var view: SearchMeaningsViewController?
+    private var output: SearchMeaningsViewOutputMock?
 
     // MARK: - XCTestCase
 
     override func setUp() {
         super.setUp()
-        view = SearchWordsViewController()
-        output = SearchWordsViewOutputMock()
+        view = SearchMeaningsViewController()
+        output = SearchMeaningsViewOutputMock()
         view?.output = output
     }
 
@@ -35,7 +35,7 @@ final class SearchWordsViewTests: XCTestCase {
 
     // MARK: - Mocks
 
-    private final class SearchWordsViewOutputMock: SearchWordsViewOutput {
+    private final class SearchMeaningsViewOutputMock: SearchMeaningsViewOutput {
     }
 
 }
