@@ -13,7 +13,7 @@ final class AppConfigurator {
         let view = UINavigationController()
         let router = AppRouter()
         router.view = view
-        router.showSearchWordsModule()
+        router.showSearchMeaningsModule()
         let window = UIWindow()
         window.rootViewController = view
         window.makeKeyAndVisible()        

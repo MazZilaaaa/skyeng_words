@@ -10,7 +10,7 @@ import UIKit
 
 final class AppRouter: AppRouterInput {
     weak var view: UINavigationController?
-    func showSearchWordsModule() {
+    func showSearchMeaningsModule() {
         let searchMeaningsConfigurator = SearchMeaningsModuleConfigurator()
         let searchMeaningsView = searchMeaningsConfigurator.configure()
         view?.viewControllers = [searchMeaningsView]
