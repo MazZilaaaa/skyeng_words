@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06BC79AD95316C96D91ECA45 /* SearchWordsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */; };
+		18F68CCDD5708A48F13C89E5 /* SearchWordsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */; };
+		1DB95850D7E8DF902B634782 /* SearchWordsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */; };
+		416E41367B8AE588B29DF470 /* SearchWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */; };
+		4F67AF0184392A5154863CEC /* SearchWordsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */; };
+		6A60B0DBCE82092355A714B8 /* SearchWordsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */; };
 		7B380E804F6088A9822E7B66 /* Pods_SkyEngWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */; };
+		970E0B1514B6BCEBC7D95D46 /* SearchWordsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */; };
+		A157D9A17FA6BA6DFDFC278C /* SearchWordsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */; };
 		A8839926241018C500C59B30 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A8839925241018C500C59B30 /* fastlane */; };
 		A8839928241018C500C59B30 /* ci in Resources */ = {isa = PBXBuildFile; fileRef = A8839927241018C500C59B30 /* ci */; };
 		A883992A241018C500C59B30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A8839929241018C500C59B30 /* Podfile */; };
@@ -25,6 +33,15 @@
 		A8839974241018C500C59B30 /* SkyEngWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8839973241018C500C59B30 /* SkyEngWordsTests.swift */; };
 		A8839979241018C500C59B30 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8839978241018C500C59B30 /* XCTestCase.swift */; };
 		A8839984241018C600C59B30 /* SkyEngWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8839983241018C600C59B30 /* SkyEngWordsUITests.swift */; };
+		A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */; };
+		A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B4241025D80038B1E9 /* AppRouter.swift */; };
+		A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */; };
+		B04F2D4ACB8AEF39BB5971EC /* SearchWordsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */; };
+		D8766405E6003E7BE1B43EA2 /* SearchWordsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */; };
+		E35B4F9B15C9E150B09A5908 /* SearchWordsModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */; };
+		E365512F51211F12257C5A65 /* SearchWordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */; };
+		F5615F6A0992568F996FC070 /* SearchWordsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */; };
+		F88D970148E051696B38083B /* SearchWordsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsPresenterTests.swift; sourceTree = "<group>"; };
 		13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouter.swift; sourceTree = "<group>"; };
+		312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewController.swift; sourceTree = "<group>"; };
+		5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewTests.swift; sourceTree = "<group>"; };
+		7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewInput.swift; sourceTree = "<group>"; };
+		80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SearchWordsViewController.storyboard; sourceTree = "<group>"; };
+		848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsViewOutput.swift; sourceTree = "<group>"; };
 		A8839921241018C500C59B30 /* SkyEngWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839925241018C500C59B30 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../../fastlane; sourceTree = "<group>"; };
 		A8839927241018C500C59B30 /* ci */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ci; path = ../../ci; sourceTree = "<group>"; };
@@ -86,12 +111,21 @@
 		A883996F241018C500C59B30 /* SkyEngWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839973241018C500C59B30 /* SkyEngWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngWordsTests.swift; sourceTree = "<group>"; };
 		A8839976241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		A8839977241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = .gitkeep; sourceTree = "<group>"; };
-		A8839978241018C500C59B30 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XCTestCase.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		A8839977241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A8839978241018C500C59B30 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		A883997A241018C500C59B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A883997F241018C600C59B30 /* SkyEngWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839983241018C600C59B30 /* SkyEngWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngWordsUITests.swift; sourceTree = "<group>"; };
 		A8839985241018C600C59B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
+		A8F0B9B4241025D80038B1E9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterInput.swift; sourceTree = "<group>"; };
+		AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleOutput.swift; sourceTree = "<group>"; };
+		BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleInput.swift; sourceTree = "<group>"; };
+		BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsPresenter.swift; sourceTree = "<group>"; };
+		C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouterTests.swift; sourceTree = "<group>"; };
+		D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsModuleConfigurator.swift; sourceTree = "<group>"; };
+		E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchWordsRouterInput.swift; sourceTree = "<group>"; };
 		F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.release.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.release.xcconfig"; sourceTree = "<group>"; };
 		F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,12 +156,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125DCDB084F19C255EF218F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BCA586C932611BD6FE550 /* SearchWordsViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1414C60019C088F6280F7D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E80EFB655EC7EC8595E17A6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D9140A8A0375C7FAE08B94EE /* SearchWordsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		310D335AF41D0DF990A9F5FB /* SearchWords */ = {
+			isa = PBXGroup;
+			children = (
+				8861133050C8EAC048D2EC83 /* Configurator */,
+				9FFB407A13D6AF64B9D2F11E /* Router */,
+				B5563DDA760B74366E0910D4 /* Presenter */,
+				125DCDB084F19C255EF218F4 /* View */,
+			);
+			path = SearchWords;
+			sourceTree = "<group>";
+		};
+		4FF9F3E13C6EC18255B2AACC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1A388CAFFFC899EA237730DA /* SearchWordsRouter.swift */,
+				E702B78E03F19BE0DFA6AF50 /* SearchWordsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		55D56D54776DCCB5E2C1DDD3 /* SearchWords */ = {
+			isa = PBXGroup;
+			children = (
+				1E80EFB655EC7EC8595E17A6 /* Configurator */,
+				4FF9F3E13C6EC18255B2AACC /* Router */,
+				C7488205201A8E5206F6E53F /* Presenter */,
+				630E73B5113C360D63836A42 /* View */,
+			);
+			path = SearchWords;
+			sourceTree = "<group>";
+		};
+		630E73B5113C360D63836A42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				312FD0E639CDE88590BAB8F9 /* SearchWordsViewController.swift */,
+				80BDD45848EE3E49F42F1B74 /* SearchWordsViewController.storyboard */,
+				7DB66BD23B9C457A126DD7B6 /* SearchWordsViewInput.swift */,
+				848F0AC62A4DC2A6977A2B80 /* SearchWordsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8861133050C8EAC048D2EC83 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				5B20B5832EC078B89725B124 /* SearchWordsModuleConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9FFB407A13D6AF64B9D2F11E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5D3CA931072785429E099 /* SearchWordsRouterTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		A8839916241018C500C59B30 = {
@@ -343,6 +451,9 @@
 			children = (
 				A8839951241018C500C59B30 /* AppDelegate.swift */,
 				A883994D241018C500C59B30 /* LaunchScreen.xib */,
+				A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */,
+				A8F0B9B4241025D80038B1E9 /* AppRouter.swift */,
+				A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -351,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				A8839954241018C500C59B30 /* .gitkeep */,
+				55D56D54776DCCB5E2C1DDD3 /* SearchWords */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
@@ -379,6 +491,7 @@
 			isa = PBXGroup;
 			children = (
 				A8839976241018C500C59B30 /* .gitkeep */,
+				B0A5881F9DFBEA985F470DD8 /* User Stories */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -392,14 +505,39 @@
 			path = SkyEngWordsUITests;
 			sourceTree = "<group>";
 		};
+		B0A5881F9DFBEA985F470DD8 /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+				310D335AF41D0DF990A9F5FB /* SearchWords */,
+			);
+			path = "User Stories";
+			sourceTree = "<group>";
+		};
+		B5563DDA760B74366E0910D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D84B1F6F96821294A3E2A04 /* SearchWordsPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BFB9C176680FC668AB0FF489 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */,
 				F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7488205201A8E5206F6E53F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFDD2E5C085014E1D81145C9 /* SearchWordsPresenter.swift */,
+				BA13E3261F9577659A94C855 /* SearchWordsModuleInput.swift */,
+				AA0647D925BA79DB8269F4B1 /* SearchWordsModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +656,7 @@
 				A8839928241018C500C59B30 /* ci in Resources */,
 				A8839950241018C500C59B30 /* Assets.xcassets in Resources */,
 				A8839926241018C500C59B30 /* fastlane in Resources */,
+				06BC79AD95316C96D91ECA45 /* SearchWordsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,8 +763,20 @@
 				A883995E241018C500C59B30 /* Colors.swift in Sources */,
 				A8839959241018C500C59B30 /* Fonts.swift in Sources */,
 				A8839969241018C500C59B30 /* ModuleTrasitionable.swift in Sources */,
+				A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */,
 				A883995B241018C500C59B30 /* Strings.swift in Sources */,
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
+				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
+				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
+				F88D970148E051696B38083B /* SearchWordsModuleConfigurator.swift in Sources */,
+				E365512F51211F12257C5A65 /* SearchWordsRouter.swift in Sources */,
+				D8766405E6003E7BE1B43EA2 /* SearchWordsRouterInput.swift in Sources */,
+				F5615F6A0992568F996FC070 /* SearchWordsPresenter.swift in Sources */,
+				A157D9A17FA6BA6DFDFC278C /* SearchWordsModuleInput.swift in Sources */,
+				18F68CCDD5708A48F13C89E5 /* SearchWordsModuleOutput.swift in Sources */,
+				416E41367B8AE588B29DF470 /* SearchWordsViewController.swift in Sources */,
+				4F67AF0184392A5154863CEC /* SearchWordsViewInput.swift in Sources */,
+				1DB95850D7E8DF902B634782 /* SearchWordsViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +786,10 @@
 			files = (
 				A8839979241018C500C59B30 /* XCTestCase.swift in Sources */,
 				A8839974241018C500C59B30 /* SkyEngWordsTests.swift in Sources */,
+				E35B4F9B15C9E150B09A5908 /* SearchWordsModuleConfiguratorTests.swift in Sources */,
+				970E0B1514B6BCEBC7D95D46 /* SearchWordsRouterTests.swift in Sources */,
+				B04F2D4ACB8AEF39BB5971EC /* SearchWordsPresenterTests.swift in Sources */,
+				6A60B0DBCE82092355A714B8 /* SearchWordsViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

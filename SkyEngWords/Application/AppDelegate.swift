@@ -8,5 +8,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appConfigurator: AppConfigurator?
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        appConfigurator = AppConfigurator()
+        window = appConfigurator?.configure()
+    }
 
 }
