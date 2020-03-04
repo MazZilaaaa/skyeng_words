@@ -12,7 +12,7 @@ final class AppRouter: AppRouterInput {
     weak var view: UINavigationController?
     func showSearchWordsModule() {
         let searchWordsConfigurator = SearchWordsModuleConfigurator()
-        let searchWardsView = searchWordsConfigurator.configure()
-        view?.viewControllers = [searchWardsView]
+        let searchWordsView = searchWordsConfigurator.configure()
+        view?.viewControllers = [searchWordsView]
     }
 }
