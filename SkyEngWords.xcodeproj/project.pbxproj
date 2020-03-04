@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B380E804F6088A9822E7B66 /* Pods_SkyEngWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */; };
 		A8839926241018C500C59B30 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A8839925241018C500C59B30 /* fastlane */; };
 		A8839928241018C500C59B30 /* ci in Resources */ = {isa = PBXBuildFile; fileRef = A8839927241018C500C59B30 /* ci */; };
 		A883992A241018C500C59B30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A8839929241018C500C59B30 /* Podfile */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839921241018C500C59B30 /* SkyEngWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839925241018C500C59B30 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fastlane; path = ../../fastlane; sourceTree = "<group>"; };
 		A8839927241018C500C59B30 /* ci */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ci; path = ../../ci; sourceTree = "<group>"; };
@@ -84,12 +86,14 @@
 		A883996F241018C500C59B30 /* SkyEngWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839973241018C500C59B30 /* SkyEngWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngWordsTests.swift; sourceTree = "<group>"; };
 		A8839976241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		A8839977241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Resources/.gitkeep; sourceTree = "<group>"; };
-		A8839978241018C500C59B30 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XCTestCase.swift; path = ../XCTestCase.swift; sourceTree = "<group>"; };
+		A8839977241018C500C59B30 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = .gitkeep; sourceTree = "<group>"; };
+		A8839978241018C500C59B30 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XCTestCase.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		A883997A241018C500C59B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A883997F241018C600C59B30 /* SkyEngWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8839983241018C600C59B30 /* SkyEngWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngWordsUITests.swift; sourceTree = "<group>"; };
 		A8839985241018C600C59B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.release.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.release.xcconfig"; sourceTree = "<group>"; };
+		F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B380E804F6088A9822E7B66 /* Pods_SkyEngWords.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,13 +122,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1414C60019C088F6280F7D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8839916241018C500C59B30 = {
 			isa = PBXGroup;
 			children = (
+				1414C60019C088F6280F7D9F /* Frameworks */,
+				BFB9C176680FC668AB0FF489 /* Pods */,
+				A8839922241018C500C59B30 /* Products */,
 				A8839923241018C500C59B30 /* SkyEngWords */,
 				A8839972241018C500C59B30 /* SkyEngWordsTests */,
 				A8839982241018C600C59B30 /* SkyEngWordsUITests */,
-				A8839922241018C500C59B30 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,15 +155,15 @@
 		A8839923241018C500C59B30 /* SkyEngWords */ = {
 			isa = PBXGroup;
 			children = (
-				A883996A241018C500C59B30 /* Info.plist */,
-				A8839924241018C500C59B30 /* Non-iOS Resources */,
-				A883992D241018C500C59B30 /* Third Party */,
-				A883992F241018C500C59B30 /* Services */,
-				A8839931241018C500C59B30 /* Resources */,
-				A883993A241018C500C59B30 /* Models */,
-				A883993F241018C500C59B30 /* Library */,
 				A883994C241018C500C59B30 /* Application */,
+				A883993F241018C500C59B30 /* Library */,
+				A883993A241018C500C59B30 /* Models */,
+				A8839924241018C500C59B30 /* Non-iOS Resources */,
+				A8839931241018C500C59B30 /* Resources */,
+				A883992F241018C500C59B30 /* Services */,
+				A883992D241018C500C59B30 /* Third Party */,
 				A8839953241018C500C59B30 /* User Stories */,
+				A883996A241018C500C59B30 /* Info.plist */,
 			);
 			path = SkyEngWords;
 			sourceTree = "<group>";
@@ -190,11 +205,11 @@
 		A8839931241018C500C59B30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A8839932241018C500C59B30 /* Strings */,
-				A8839934241018C500C59B30 /* Images */,
+				A883995C241018C500C59B30 /* Colors */,
 				A8839936241018C500C59B30 /* Constants */,
 				A8839938241018C500C59B30 /* Fonts */,
-				A883995C241018C500C59B30 /* Colors */,
+				A8839934241018C500C59B30 /* Images */,
+				A8839932241018C500C59B30 /* Strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,8 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				A8839935241018C500C59B30 /* .gitkeep */,
-				A883994F241018C500C59B30 /* Assets.xcassets */,
 				A8839956241018C500C59B30 /* Assets.swift */,
+				A883994F241018C500C59B30 /* Assets.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -265,11 +280,11 @@
 			isa = PBXGroup;
 			children = (
 				A8839940241018C500C59B30 /* Base Classes */,
-				A8839942241018C500C59B30 /* Utils */,
 				A8839944241018C500C59B30 /* Extensions */,
-				A8839946241018C500C59B30 /* Reusable Layer */,
 				A8839948241018C500C59B30 /* Protocols */,
+				A8839946241018C500C59B30 /* Reusable Layer */,
 				A883994A241018C500C59B30 /* Routers */,
+				A8839942241018C500C59B30 /* Utils */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -326,8 +341,8 @@
 		A883994C241018C500C59B30 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A883994D241018C500C59B30 /* LaunchScreen.xib */,
 				A8839951241018C500C59B30 /* AppDelegate.swift */,
+				A883994D241018C500C59B30 /* LaunchScreen.xib */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -351,11 +366,11 @@
 		A8839972241018C500C59B30 /* SkyEngWordsTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8839973241018C500C59B30 /* SkyEngWordsTests.swift */,
-				A8839977241018C500C59B30 /* .gitkeep */,
-				A8839978241018C500C59B30 /* XCTestCase.swift */,
-				A883997A241018C500C59B30 /* Info.plist */,
 				A8839975241018C500C59B30 /* Tests */,
+				A8839977241018C500C59B30 /* .gitkeep */,
+				A883997A241018C500C59B30 /* Info.plist */,
+				A8839973241018C500C59B30 /* SkyEngWordsTests.swift */,
+				A8839978241018C500C59B30 /* XCTestCase.swift */,
 			);
 			path = SkyEngWordsTests;
 			sourceTree = "<group>";
@@ -371,10 +386,20 @@
 		A8839982241018C600C59B30 /* SkyEngWordsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A8839983241018C600C59B30 /* SkyEngWordsUITests.swift */,
 				A8839985241018C600C59B30 /* Info.plist */,
+				A8839983241018C600C59B30 /* SkyEngWordsUITests.swift */,
 			);
 			path = SkyEngWordsUITests;
+			sourceTree = "<group>";
+		};
+		BFB9C176680FC668AB0FF489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */,
+				F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,11 +409,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8839988241018C600C59B30 /* Build configuration list for PBXNativeTarget "SkyEngWords" */;
 			buildPhases = (
+				885CF5F29F62567CBDC1C8F2 /* [CP] Check Pods Manifest.lock */,
 				A883991B241018C500C59B30 /* Sources */,
 				A883991C241018C500C59B30 /* Frameworks */,
 				A883991D241018C500C59B30 /* Resources */,
 				A883991E241018C500C59B30 /* Swift Lint */,
 				A883991F241018C500C59B30 /* Swift Gen */,
+				D763649BC749BADE3A148619 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -511,6 +538,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		885CF5F29F62567CBDC1C8F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyEngWords-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A883991E241018C500C59B30 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +595,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${SRCROOT}/Pods/SwiftGen/bin/swiftgen";
+		};
+		D763649BC749BADE3A148619 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -712,6 +778,7 @@
 		};
 		A8839989241018C600C59B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D34D4C7704D43B8519717B /* Pods-SkyEngWords.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -729,6 +796,7 @@
 		};
 		A883998A241018C600C59B30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
