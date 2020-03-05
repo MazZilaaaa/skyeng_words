@@ -48,7 +48,7 @@ extension API: TargetType {
         guard let data = "".data(using: .utf8) else {
             return Data()
         }
-        
+
         return data
     }
 
