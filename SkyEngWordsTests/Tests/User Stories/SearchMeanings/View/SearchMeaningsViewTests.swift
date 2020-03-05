@@ -38,7 +38,7 @@ final class SearchMeaningsViewTests: XCTestCase {
     private final class SearchMeaningsViewOutputMock: SearchMeaningsViewOutput {
         func viewLoaded() {
         }
-        
+
         func searchTextChanged(word: String) {
         }
 

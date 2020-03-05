@@ -38,7 +38,7 @@ final class SearchMeaningsRouterTests: XCTestCase {
     private final class MockModuleTransitionable: ModuleTransitionable {
         func popToRoot(animated: Bool) {
         }
-        
+
         func showModule(_ module: UIViewController) {
         }
 
