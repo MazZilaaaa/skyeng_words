@@ -13,10 +13,12 @@ enum API {
         case searchWords = "/words/search"
         case meanings = "/meanings"
     }
+
     enum QueryKeys: String {
         case wordSearch = "search"
         case ids = "ids"
     }
+
     case searchWords(_ searchString: String)
     case meaningDetail(_ ids: String)
 }
@@ -25,6 +27,7 @@ extension API: TargetType {
     var baseURL: URL {
         return Environment.apiURL
     }
+
     var path: String {
         switch self {
         case .searchWords:
@@ -33,15 +36,22 @@ extension API: TargetType {
             return Endpoint.meanings.rawValue
         }
     }
+
     var method: Method {
         switch self {
         case .searchWords, .meaningDetail:
             return .get
         }
     }
+
     var sampleData: Data {
-        return "".data(using: .utf8)!
+        guard let data = "".data(using: .utf8) else {
+            return Data()
+        }
+        
+        return data
     }
+
     var task: Task {
         switch self {
         case .searchWords(let searchString):
@@ -52,9 +62,11 @@ extension API: TargetType {
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }
+
     var headers: [String: String]? {
         return ["Content-type": "application/json; charset=UTF-8"]
     }
+
     public var validationType: ValidationType {
         return .successCodes
     }

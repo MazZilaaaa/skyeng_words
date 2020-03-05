@@ -42,6 +42,7 @@
 		A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BA24104A470038B1E9 /* Meaning.swift */; };
 		A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BC24104A7C0038B1E9 /* Translation.swift */; };
 		C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */; };
+		C90DF63A24114524008A8DCB /* WordsViewAdapterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF63924114524008A8DCB /* WordsViewAdapterOutput.swift */; };
 		C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */; };
 		C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */; };
 		C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */; };
@@ -144,6 +145,7 @@
 		A8F0B9BC24104A7C0038B1E9 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleOutput.swift; sourceTree = "<group>"; };
 		C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleInput.swift; sourceTree = "<group>"; };
+		C90DF63924114524008A8DCB /* WordsViewAdapterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewAdapterOutput.swift; sourceTree = "<group>"; };
 		C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
 		C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMeaningsViewController.xib; sourceTree = "<group>"; };
 		C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
@@ -566,6 +568,15 @@
 			path = SearchMeanings;
 			sourceTree = "<group>";
 		};
+		C90DF638241144F0008A8DCB /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				C90DF63924114524008A8DCB /* WordsViewAdapterOutput.swift */,
+				C9B2F3E52411020900C23BA6 /* WordsDataSource.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		C9B2F3E724111E6900C23BA6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,12 +597,12 @@
 		E327D8389EC9073D0651D3E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C90DF638241144F0008A8DCB /* Adapter */,
 				C9B2F3E724111E6900C23BA6 /* Cells */,
 				C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */,
 				C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */,
 				6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */,
 				32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */,
-				C9B2F3E52411020900C23BA6 /* WordsDataSource.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -839,6 +850,7 @@
 				A883995B241018C500C59B30 /* Strings.swift in Sources */,
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
 				C9B2F3E22410F4AF00C23BA6 /* IWordsService.swift in Sources */,
+				C90DF63A24114524008A8DCB /* WordsViewAdapterOutput.swift in Sources */,
 				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
 				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
 				C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */,

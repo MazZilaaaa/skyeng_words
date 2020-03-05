@@ -7,5 +7,5 @@
 //
 
 protocol SearchMeaningsModuleOutput: class {
-
+    func didSelectWord(word: Word)
 }

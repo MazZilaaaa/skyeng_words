@@ -10,17 +10,24 @@ import Foundation
 import UIKit
 
 class WordsDataSource: NSObject {
-    var tableView: UITableView
-    var words: [Word]? {
+    var tableView: UITableView?
+    var items: [Word] {
         didSet {
-            tableView.reloadData()
+            tableView?.reloadData()
         }
     }
-    init(tableView: UITableView) {
-        self.tableView = tableView
+
+    private let output: WordsViewAdapterOutput
+
+    init(output: WordsViewAdapterOutput) {
+        self.output = output
+        self.items = [Word]()
     }
-    func configure() {
+
+    func configure(tableView: UITableView) {
+        self.tableView = tableView
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 120
         tableView.showsVerticalScrollIndicator = false
@@ -32,17 +39,13 @@ extension WordsDataSource: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let dataSource = words else {
-            return 0
-        }
-        return dataSource.count
+        return items.count
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let dataSource = words else {
-            return UITableViewCell()
-        }
-        let word = dataSource[indexPath.row]
+        let word = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(
             withIdentifier: WordTableViewCell.identifier,
             for: indexPath
@@ -53,5 +56,11 @@ extension WordsDataSource: UITableViewDataSource {
         wordCell.configure(word: word)
 
         return wordCell
+    }
+}
+
+extension WordsDataSource: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        output.didSelectWord(word: items[indexPath.row])
     }
 }

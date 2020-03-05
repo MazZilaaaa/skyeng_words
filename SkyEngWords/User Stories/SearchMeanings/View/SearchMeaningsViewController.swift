@@ -11,19 +11,24 @@ import UIKit
 final class SearchMeaningsViewController: UIViewController,
     SearchMeaningsViewInput,
     ModuleTransitionable,
-    UISearchBarDelegate {
+    WordsViewAdapterOutput,
+UISearchBarDelegate {
+
     var output: SearchMeaningsViewOutput?
     var dataSource: WordsDataSource?
+
     @IBOutlet weak private var searchBar: UISearchBar!
     @IBOutlet weak private var tableView: UITableView!
     @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
-        dataSource = WordsDataSource(tableView: tableView)
-        dataSource?.configure()
+        dataSource = WordsDataSource(output: self)
+        dataSource?.configure(tableView: tableView)
         output?.viewLoaded()
     }
+
     func setState(state: LoadingState) {
         switch state {
         case .loading:
@@ -32,9 +37,15 @@ final class SearchMeaningsViewController: UIViewController,
             activityIndicator.stopAnimating()
         }
     }
+
     func setWords(words: [Word]) {
-        dataSource?.words = words
+        dataSource?.items = words
     }
+
+    func didSelectWord(word: Word) {
+        output?.didSelectWord(word: word)
+    }
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let searchText = searchBar.text else {
             return
@@ -46,6 +57,7 @@ final class SearchMeaningsViewController: UIViewController,
             self.perform(#selector(search), with: nil, afterDelay: 0.5)
         }
     }
+
     @objc
     private func search() {
         if let searchText = searchBar.text {

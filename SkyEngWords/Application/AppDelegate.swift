@@ -13,5 +13,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appConfigurator = AppConfigurator()
         window = appConfigurator?.configure()
     }
-
 }

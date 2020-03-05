@@ -15,12 +15,14 @@ public enum Environment {
         static let apiVersion = "API_VERSION"
       }
     }
+
     private static let infoDictionary: [String: Any] = {
         guard let dict = Bundle.main.infoDictionary else {
             fatalError("Plist file not found")
         }
         return dict
     }()
+
     static let baseURL: URL = {
         guard let stringURL = Environment.infoDictionary[Keys.Plist.baseURL] as? String else {
             fatalError("baseURL not set in plist for this environment")
@@ -30,12 +32,14 @@ public enum Environment {
         }
         return baseURL
     }()
+
     static let apiVersion: String = {
         guard let apiVersion = Environment.infoDictionary[Keys.Plist.apiVersion] as? String else {
             fatalError("apiVersion not set in plist for this environment")
         }
         return apiVersion
     }()
+
     static let apiURL: URL = {
         return baseURL.appendingPathComponent("/api/public/\(apiVersion)")
     }()

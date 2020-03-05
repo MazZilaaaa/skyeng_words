@@ -11,9 +11,11 @@ import Moya
 class FetchService: IFetchService {
     private let provider: MoyaProvider<API>
     private var currentRequest: Cancellable?
+
     init(provider: MoyaProvider<API>) {
         self.provider = provider
     }
+
     func fetch<T: Codable>(_ target: API, _ completion: @escaping (Result<T, ServiceError>) -> Void) {
         currentRequest?.cancel()
         currentRequest = provider.request(target) { result in

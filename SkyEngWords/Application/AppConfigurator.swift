@@ -11,12 +11,15 @@ import UIKit
 final class AppConfigurator {
     func configure() -> UIWindow {
         let view = UINavigationController()
+
         let router = AppRouter()
         router.view = view
         router.showSearchMeaningsModule()
+
         let window = UIWindow()
         window.rootViewController = view
         window.makeKeyAndVisible()
+
         return window
     }
 }
