@@ -7,7 +7,6 @@
 //
 
 final class DetailWordPresenter: DetailWordViewOutput, DetailWordModuleInput {
-    
 
     // MARK: - Properties
 
@@ -15,12 +14,13 @@ final class DetailWordPresenter: DetailWordViewOutput, DetailWordModuleInput {
     var router: DetailWordRouterInput?
     var output: DetailWordModuleOutput?
     var word: Word
-    
+
     init(word: Word) {
         self.word = word
     }
 
     // MARK: - DetailWordViewOutput
+
     func viewLoaded() {
         view?.configure(with: word)
     }

@@ -16,21 +16,21 @@ final class DetailWordViewController: UIViewController,
     var output: DetailWordViewOutput?
     var dataSource: MeaningsDataSource?
     @IBOutlet weak private var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = MeaningsDataSource(output: self)
         dataSource?.configure(tableView: tableView)
         output?.viewLoaded()
     }
-    
+
     func configure(with word: Word) {
         title = word.text
         if let meanings = word.meanings {
             dataSource?.items = meanings
         }
     }
-    
+
     func didSelectMeaning(meaning: Meaning) {
     }
 }

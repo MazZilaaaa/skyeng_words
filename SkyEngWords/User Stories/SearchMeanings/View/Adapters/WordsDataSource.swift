@@ -88,7 +88,7 @@ extension WordsDataSource: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         output.didSelectWord(word: items[indexPath.row])
     }
-    
+
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         output.willBeginDragging()
     }

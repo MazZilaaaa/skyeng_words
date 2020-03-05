@@ -14,15 +14,17 @@ final class DetailWordModuleConfiguratorTests: XCTestCase {
 	// MARK: - Main tests
 
     func testThatViewControllerLoadsCorrectly() {
-        if UIStoryboard(name: String(describing: DetailWordViewController.self),
-                        bundle: Bundle.main).instantiateInitialViewController() == nil {
-            XCTFail("Can't load DetailWordViewController from storyboard, check that controller is initial view controller")
+        let controller = DetailWordViewController(nibName: "DetailWordViewController", bundle: nil)
+        if controller == nil {
+            XCTFail("Can't load DetailWordViewController from storyboard," +
+                "check that controller is initial view controller")
         }
     }
 
     func testThatScreenConfiguresCorrectly() {
         // when
-        let viewController = DetailWordModuleConfigurator().configure()
+        let word = Word(id: 1, text: "word", meanings: nil)
+        let viewController = DetailWordModuleConfigurator().configure(with: word)
 
         // then
         XCTAssertNotNil(viewController.output, "DetailWordViewController is nil after configuration")

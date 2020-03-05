@@ -18,13 +18,13 @@ final class SearchMeaningsViewController: UIViewController, ModuleTransitionable
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+
         searchController = UISearchController(searchResultsController: nil)
         searchController?.obscuresBackgroundDuringPresentation = false
         searchController?.searchBar.placeholder = "введите слово"
         searchController?.searchResultsUpdater = self
         navigationItem.searchController = searchController
-        
+
         dataSource = WordsDataSource(output: self)
         dataSource?.configure(tableView: tableView)
         output?.viewLoaded()
@@ -66,7 +66,6 @@ extension SearchMeaningsViewController: WordsViewAdapterOutput {
 
 extension SearchMeaningsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        
         if let text = searchController.searchBar.text {
             output?.searchTextChanged(word: text)
         }

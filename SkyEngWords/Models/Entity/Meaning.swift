@@ -15,9 +15,12 @@ struct Meaning: Codable {
     let transcription: String?
     let previewUrl: String?
     let imageUrl: String?
-    
+
     var previewImageUrl: URL? {
-        guard let previewUrl = previewUrl else { return nil }
+        guard let previewUrl = previewUrl else {
+            return nil
+        }
+
         return URL(string: "https:\(previewUrl)")
     }
 }

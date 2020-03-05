@@ -9,7 +9,7 @@
 import UIKit
 
 class MeaningTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak private var previewImageView: UIImageView!
     @IBOutlet weak private var translateLabel: UILabel!
     @IBOutlet weak private var noteLabel: UILabel!

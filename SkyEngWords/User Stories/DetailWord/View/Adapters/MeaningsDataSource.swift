@@ -11,9 +11,9 @@ import UIKit
 
 final class MeaningsDataSource: NSObject {
     var tableView: UITableView?
-    
+
     var word: Word?
-    
+
     var items: [Meaning] {
         didSet {
             tableView?.reloadData()
@@ -62,7 +62,7 @@ extension MeaningsDataSource: UITableViewDataSource {
 
         return meaningCell
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "значения"
     }
