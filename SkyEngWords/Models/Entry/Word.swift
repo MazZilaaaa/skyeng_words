@@ -11,5 +11,5 @@ import Foundation
 struct Word: Codable {
     let id: Int?
     let text: String?
-    let meanings: [Meaning]
+    let meanings: [Meaning]?
 }

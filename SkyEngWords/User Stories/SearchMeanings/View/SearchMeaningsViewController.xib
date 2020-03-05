@@ -24,7 +24,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Sc-UB9">
-                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
@@ -35,7 +35,7 @@
                 <constraint firstItem="UEQ-Sc-UB9" firstAttribute="top" secondItem="EIo-3R-3G1" secondAttribute="bottom" id="gFO-TI-HTL"/>
                 <constraint firstItem="UEQ-Sc-UB9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="il7-EP-xqr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EIo-3R-3G1" secondAttribute="trailing" id="nHR-7T-owQ"/>
-                <constraint firstAttribute="bottomMargin" secondItem="UEQ-Sc-UB9" secondAttribute="bottom" id="xIP-QO-Exg"/>
+                <constraint firstAttribute="bottom" secondItem="UEQ-Sc-UB9" secondAttribute="bottom" id="xIP-QO-Exg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UEQ-Sc-UB9" secondAttribute="trailing" id="zbe-6Q-cXl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

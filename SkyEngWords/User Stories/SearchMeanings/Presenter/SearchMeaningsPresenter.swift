@@ -18,6 +18,10 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
 
     // MARK: - SearchMeaningsViewOutput
     func search(word: String) {
+        if word.isEmpty {
+            self.view?.setWords(words: [])
+            return
+        }
         view?.setState(state: .loading)
         service?.fetchWords(word: word, { [weak self] result in
             guard let self = self else {
