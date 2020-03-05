@@ -84,6 +84,7 @@ extension WordsDataSource: UITableViewDataSource {
 
 extension WordsDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         output.didSelectWord(word: items[indexPath.row])
     }
 

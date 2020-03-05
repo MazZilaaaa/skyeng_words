@@ -70,31 +70,27 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
         isLoading = true
         view?.setState(state: .loading)
         let nextPage = initially ? 0 : currentPage + 1
-        print("find by \(word)")
         service?.fetchWords(word: word, page: nextPage, pageSize: pageSize, { [weak self] result in
             guard let self = self else {
+                return
+            }
+            
+            if self.searchingWord != word {
                 return
             }
 
             switch result {
             case .success(let words):
-                print("success by \(word)")
                 self.hasOtherItems = words.count == self.pageSize
                 self.currentPage = nextPage
                 self.items.append(contentsOf: words)
                 self.view?.setState(state: .success)
                 self.view?.setWords(words: self.items)
-                self.isLoading = false
             case .failure(let error):
-                switch error {
-                case .canceled:
-                    break
-                default:
-                    self.view?.setState(state: .failed)
-                    self.isLoading = false
-                }
+                self.view?.setState(state: .failed)
             }
 
+            self.isLoading = false
         })
     }
 

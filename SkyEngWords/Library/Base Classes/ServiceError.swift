@@ -12,7 +12,6 @@ enum ServiceError: Error {
     case emptyData
     case decode
     case loading
-    case canceled
 }
 
 extension ServiceError: LocalizedError {
@@ -24,8 +23,6 @@ extension ServiceError: LocalizedError {
             return NSLocalizedString("Ошибка обработки данных", comment: "")
         case .loading:
             return NSLocalizedString("Ошибка подключения. Попробуйте повторить позднее", comment: "")
-        case .canceled:
-            return NSLocalizedString("Запрос отменен", comment: "")
         }
     }
 }

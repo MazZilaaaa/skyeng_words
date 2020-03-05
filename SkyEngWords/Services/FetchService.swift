@@ -10,15 +10,13 @@ import Moya
 
 class FetchService: IFetchService {
     private let provider: MoyaProvider<API>
-    private var currentRequest: Cancellable?
 
     init(provider: MoyaProvider<API>) {
         self.provider = provider
     }
 
     func fetch<T: Codable>(_ target: API, _ completion: @escaping (Result<T, ServiceError>) -> Void) {
-        currentRequest?.cancel()
-        currentRequest = provider.request(target) { result in
+        provider.request(target) { result in
             switch result {
             case .success(let response):
                 do {
@@ -30,13 +28,8 @@ class FetchService: IFetchService {
                     completion(.failure(.decode))
                 }
             case .failure(let error):
-                switch error {
-                case .underlying:
-                    completion(.failure(.canceled))
-                default:
-                    print(error)
-                    completion(.failure(.loading))
-                }
+                print(error)
+                completion(.failure(.loading))
             }
         }
     }
