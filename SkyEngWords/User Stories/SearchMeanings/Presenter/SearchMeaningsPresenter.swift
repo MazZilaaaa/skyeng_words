@@ -21,7 +21,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
         view?.setState(state: .success)
     }
 
-    func search(word: String) {
+    func searchTextChanged(word: String) {
         if word.isEmpty {
             self.view?.setWords(words: [])
             return

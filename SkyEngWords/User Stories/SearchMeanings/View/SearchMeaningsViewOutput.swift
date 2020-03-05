@@ -8,6 +8,6 @@
 
 protocol SearchMeaningsViewOutput {
     func viewLoaded()
-    func search(word: String)
+    func searchTextChanged(word: String)
     func didSelectWord(word: Word)
 }
