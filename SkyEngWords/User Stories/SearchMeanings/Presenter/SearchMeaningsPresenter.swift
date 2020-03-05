@@ -7,6 +7,7 @@
 //
 
 final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsModuleInput {
+    
 
     // MARK: - Properties
 
@@ -15,6 +16,8 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     var output: SearchMeaningsModuleOutput?
 
     // MARK: - SearchMeaningsViewOutput
+    func search(word: String) {
+    }
 
     // MARK: - SearchMeaningsModuleInput
 

@@ -41,9 +41,10 @@
 		A8F0B9B924104A070038B1E9 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9B824104A070038B1E9 /* Word.swift */; };
 		A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BA24104A470038B1E9 /* Meaning.swift */; };
 		A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BC24104A7C0038B1E9 /* Translation.swift */; };
-		BAFE4CEB4E5D5D0EEB4516D3 /* SearchMeaningsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */; };
 		C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */; };
-		CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */; };
+		C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */; };
+		C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */; };
+		C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */; };
 		CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */; };
 		F00B02B3734BDA79A4423D27 /* SearchMeaningsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */; };
 		FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */; };
@@ -70,9 +71,7 @@
 		062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouterInput.swift; sourceTree = "<group>"; };
 		130B4B40A0319FDC3C557CE6 /* SearchMeaningsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouter.swift; sourceTree = "<group>"; };
 		13AAE5E33919B31CEFADF8AB /* Pods_SkyEngWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
 		32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewOutput.swift; sourceTree = "<group>"; };
-		33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SearchMeaningsViewController.storyboard; sourceTree = "<group>"; };
 		3D07C1B39D23957385816399 /* SearchMeaningsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewTests.swift; sourceTree = "<group>"; };
 		4125634065F991237B40C819 /* SearchMeaningsModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleConfiguratorTests.swift; sourceTree = "<group>"; };
 		6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewInput.swift; sourceTree = "<group>"; };
@@ -136,6 +135,9 @@
 		A8F0B9BC24104A7C0038B1E9 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleOutput.swift; sourceTree = "<group>"; };
 		C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleInput.swift; sourceTree = "<group>"; };
+		C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
+		C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMeaningsViewController.xib; sourceTree = "<group>"; };
+		C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenter.swift; sourceTree = "<group>"; };
 		E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouterTests.swift; sourceTree = "<group>"; };
 		F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.release.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				CCEF1404C29B42F8671CBC4D /* Configurator */,
-				6F2C6D414035987BCA8B74F0 /* Router */,
 				8FD404B0624E946F93234914 /* Presenter */,
+				6F2C6D414035987BCA8B74F0 /* Router */,
 				BACD7E2792ACE38940109CBF /* View */,
 			);
 			path = SearchMeanings;
@@ -198,9 +200,9 @@
 		6C177954FA5C2F9A9D331327 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */,
 				C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */,
 				B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */,
+				D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -254,10 +256,10 @@
 		A8839923241018C500C59B30 /* SkyEngWords */ = {
 			isa = PBXGroup;
 			children = (
-				A822398F24104D9200745E73 /* Network */,
 				A883994C241018C500C59B30 /* Application */,
 				A883993F241018C500C59B30 /* Library */,
 				A883993A241018C500C59B30 /* Models */,
+				A822398F24104D9200745E73 /* Network */,
 				A8839924241018C500C59B30 /* Non-iOS Resources */,
 				A8839931241018C500C59B30 /* Resources */,
 				A883992F241018C500C59B30 /* Services */,
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				A8839941241018C500C59B30 /* .gitkeep */,
+				C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */,
 			);
 			path = "Base Classes";
 			sourceTree = "<group>";
@@ -444,13 +447,13 @@
 		A883994C241018C500C59B30 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A8839951241018C500C59B30 /* AppDelegate.swift */,
-				A883994D241018C500C59B30 /* LaunchScreen.xib */,
 				A8F0B9B2241024620038B1E9 /* AppConfigurator.swift */,
+				A8839951241018C500C59B30 /* AppDelegate.swift */,
 				A8F0B9B4241025D80038B1E9 /* AppRouter.swift */,
 				A8F0B9B6241027FA0038B1E9 /* AppRouterInput.swift */,
-				A82239902410504400745E73 /* Environment.swift */,
 				A82239922410509600745E73 /* Development.xcconfig */,
+				A82239902410504400745E73 /* Environment.swift */,
+				A883994D241018C500C59B30 /* LaunchScreen.xib */,
 				A82239932410512400745E73 /* Release.xcconfig */,
 			);
 			path = Application;
@@ -459,8 +462,8 @@
 		A8839953241018C500C59B30 /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
-				A8839954241018C500C59B30 /* .gitkeep */,
 				C8656D76E25A35DB147E38DD /* SearchMeanings */,
+				A8839954241018C500C59B30 /* .gitkeep */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
@@ -488,8 +491,8 @@
 		A8839975241018C500C59B30 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A8839976241018C500C59B30 /* .gitkeep */,
 				B0A5881F9DFBEA985F470DD8 /* User Stories */,
+				A8839976241018C500C59B30 /* .gitkeep */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -532,8 +535,8 @@
 			isa = PBXGroup;
 			children = (
 				28057F8C9483A79DD1192B30 /* Configurator */,
-				E7F3A1E42F0DD64234DCBFF3 /* Router */,
 				6C177954FA5C2F9A9D331327 /* Presenter */,
+				E7F3A1E42F0DD64234DCBFF3 /* Router */,
 				E327D8389EC9073D0651D3E5 /* View */,
 			);
 			path = SearchMeanings;
@@ -550,8 +553,8 @@
 		E327D8389EC9073D0651D3E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1D0A16B9D903AE09009A3F11 /* SearchMeaningsViewController.swift */,
-				33081B8FB6B1A44FD9DBACE2 /* SearchMeaningsViewController.storyboard */,
+				C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */,
+				C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */,
 				6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */,
 				32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */,
 			);
@@ -680,10 +683,10 @@
 				A8839960241018C500C59B30 /* swiftgen.yml in Resources */,
 				A883992C241018C500C59B30 /* .gitignore in Resources */,
 				A883992A241018C500C59B30 /* Podfile in Resources */,
+				C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */,
 				A8839928241018C500C59B30 /* ci in Resources */,
 				A8839950241018C500C59B30 /* Assets.xcassets in Resources */,
 				A8839926241018C500C59B30 /* fastlane in Resources */,
-				BAFE4CEB4E5D5D0EEB4516D3 /* SearchMeaningsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,11 +795,13 @@
 				A883995E241018C500C59B30 /* Colors.swift in Sources */,
 				A8839959241018C500C59B30 /* Fonts.swift in Sources */,
 				A8839969241018C500C59B30 /* ModuleTrasitionable.swift in Sources */,
+				C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */,
 				A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */,
 				A883995B241018C500C59B30 /* Strings.swift in Sources */,
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
 				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
 				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
+				C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */,
 				A8F0B9B924104A070038B1E9 /* Word.swift in Sources */,
 				8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */,
 				A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */,
@@ -806,7 +811,6 @@
 				145FB02795B7A272E5CD1A81 /* SearchMeaningsModuleInput.swift in Sources */,
 				A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */,
 				1C85C740E2BF3F5B8403A923 /* SearchMeaningsModuleOutput.swift in Sources */,
-				CB4FF7BB540D60185BBA0024 /* SearchMeaningsViewController.swift in Sources */,
 				CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */,
 				C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */,
 			);

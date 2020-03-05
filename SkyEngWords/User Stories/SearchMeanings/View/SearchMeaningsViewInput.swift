@@ -7,5 +7,6 @@
 //
 
 protocol SearchMeaningsViewInput: class {
-
+    func setState(state: LoadingState)
+    func setWords(words: [Word])
 }
