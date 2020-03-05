@@ -45,6 +45,11 @@
 		C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */; };
 		C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */; };
 		C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */; };
+		C9B2F3DA2410F1F900C23BA6 /* WordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D92410F1F900C23BA6 /* WordsService.swift */; };
+		C9B2F3DC2410F2CD00C23BA6 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3DB2410F2CD00C23BA6 /* FetchService.swift */; };
+		C9B2F3DE2410F30000C23BA6 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3DD2410F30000C23BA6 /* ServiceError.swift */; };
+		C9B2F3E02410F47900C23BA6 /* IFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3DF2410F47900C23BA6 /* IFetchService.swift */; };
+		C9B2F3E22410F4AF00C23BA6 /* IWordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3E12410F4AF00C23BA6 /* IWordsService.swift */; };
 		CC7BA354AFC6F1DDCB59431B /* SearchMeaningsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB68A52D31630EAEA96DAA4 /* SearchMeaningsViewInput.swift */; };
 		F00B02B3734BDA79A4423D27 /* SearchMeaningsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A6C51D77F41A215809858 /* SearchMeaningsRouterInput.swift */; };
 		FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */; };
@@ -138,6 +143,11 @@
 		C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
 		C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMeaningsViewController.xib; sourceTree = "<group>"; };
 		C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		C9B2F3D92410F1F900C23BA6 /* WordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsService.swift; sourceTree = "<group>"; };
+		C9B2F3DB2410F2CD00C23BA6 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
+		C9B2F3DD2410F30000C23BA6 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		C9B2F3DF2410F47900C23BA6 /* IFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFetchService.swift; sourceTree = "<group>"; };
+		C9B2F3E12410F4AF00C23BA6 /* IWordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWordsService.swift; sourceTree = "<group>"; };
 		D985EAE49E1B9E74B28AC5F3 /* SearchMeaningsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsPresenter.swift; sourceTree = "<group>"; };
 		E05E5815BCA6F8633BB6CF18 /* SearchMeaningsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsRouterTests.swift; sourceTree = "<group>"; };
 		F1A0FC6B2AC4238C0F6042C9 /* Pods-SkyEngWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngWords.release.xcconfig"; path = "Target Support Files/Pods-SkyEngWords/Pods-SkyEngWords.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,6 +310,10 @@
 			isa = PBXGroup;
 			children = (
 				A8839930241018C500C59B30 /* .gitkeep */,
+				C9B2F3DF2410F47900C23BA6 /* IFetchService.swift */,
+				C9B2F3DB2410F2CD00C23BA6 /* FetchService.swift */,
+				C9B2F3E12410F4AF00C23BA6 /* IWordsService.swift */,
+				C9B2F3D92410F1F900C23BA6 /* WordsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -399,6 +413,7 @@
 			children = (
 				A8839941241018C500C59B30 /* .gitkeep */,
 				C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */,
+				C9B2F3DD2410F30000C23BA6 /* ServiceError.swift */,
 			);
 			path = "Base Classes";
 			sourceTree = "<group>";
@@ -791,17 +806,22 @@
 			files = (
 				A822398C24104C2800745E73 /* API.swift in Sources */,
 				A82239912410504400745E73 /* Environment.swift in Sources */,
+				C9B2F3E02410F47900C23BA6 /* IFetchService.swift in Sources */,
 				A8839957241018C500C59B30 /* Assets.swift in Sources */,
 				A883995E241018C500C59B30 /* Colors.swift in Sources */,
 				A8839959241018C500C59B30 /* Fonts.swift in Sources */,
 				A8839969241018C500C59B30 /* ModuleTrasitionable.swift in Sources */,
+				C9B2F3DC2410F2CD00C23BA6 /* FetchService.swift in Sources */,
 				C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */,
 				A8F0B9B3241024620038B1E9 /* AppConfigurator.swift in Sources */,
+				C9B2F3DA2410F1F900C23BA6 /* WordsService.swift in Sources */,
 				A883995B241018C500C59B30 /* Strings.swift in Sources */,
 				A8839952241018C500C59B30 /* AppDelegate.swift in Sources */,
+				C9B2F3E22410F4AF00C23BA6 /* IWordsService.swift in Sources */,
 				A8F0B9B7241027FA0038B1E9 /* AppRouterInput.swift in Sources */,
 				A8F0B9B5241025D80038B1E9 /* AppRouter.swift in Sources */,
 				C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */,
+				C9B2F3DE2410F30000C23BA6 /* ServiceError.swift in Sources */,
 				A8F0B9B924104A070038B1E9 /* Word.swift in Sources */,
 				8C67BCF103CF4090EDBDB2F9 /* SearchMeaningsModuleConfigurator.swift in Sources */,
 				A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */,

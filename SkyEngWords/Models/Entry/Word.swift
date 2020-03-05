@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Word: Decodable {
+struct Word: Codable {
     let id: Int?
     let text: String?
     let meanings: [Meaning]

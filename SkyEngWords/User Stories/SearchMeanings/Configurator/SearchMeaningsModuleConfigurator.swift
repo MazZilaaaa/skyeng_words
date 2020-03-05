@@ -17,10 +17,13 @@ final class SearchMeaningsModuleConfigurator {
         let view = SearchMeaningsViewController(nibName: "SearchMeaningsViewController", bundle: nil)
         let presenter = SearchMeaningsPresenter()
         let router = SearchMeaningsRouter()
+        let provider = MoyaProvider<API>()
+        let service = WordsService(provider: provider)
 
         presenter.view = view
         presenter.router = router
         presenter.output = output
+        presenter.service = service
         router.view = view
         view.output = presenter
 

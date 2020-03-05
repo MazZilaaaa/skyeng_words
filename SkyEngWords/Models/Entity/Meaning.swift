@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Meaning: Decodable {
+struct Meaning: Codable {
     let id: Int?
     let partOfSpeechCode: String?
     let translation: Translation?

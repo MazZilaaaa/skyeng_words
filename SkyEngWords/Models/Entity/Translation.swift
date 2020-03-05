@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Translation: Decodable {
+struct Translation: Codable {
     let text: String?
     let note: String?
 }

@@ -14,9 +14,24 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     weak var view: SearchMeaningsViewInput?
     var router: SearchMeaningsRouterInput?
     var output: SearchMeaningsModuleOutput?
+    var service: IWordsService?
 
     // MARK: - SearchMeaningsViewOutput
     func search(word: String) {
+        view?.setState(state: .loading)
+        service?.fetchWords(word: word, { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            switch result {
+            case .success(let words):
+                self.view?.setState(state: .success)
+                self.view?.setWords(words: words)
+            case .failure(let error):
+                print(error.localizedDescription)
+                self.view?.setState(state: .failed)
+            }
+        })
     }
 
     // MARK: - SearchMeaningsModuleInput
