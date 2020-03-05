@@ -36,6 +36,18 @@ final class SearchMeaningsViewTests: XCTestCase {
     // MARK: - Mocks
 
     private final class SearchMeaningsViewOutputMock: SearchMeaningsViewOutput {
+        func viewLoaded() {
+        }
+        
+        func searchTextChanged(word: String) {
+        }
+
+        func didSelectWord(word: Word) {
+        }
+
+        func loadMoreSearchResults() {
+        }
+
     }
 
 }

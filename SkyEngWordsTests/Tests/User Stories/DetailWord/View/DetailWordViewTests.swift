@@ -36,6 +36,8 @@ final class DetailWordViewTests: XCTestCase {
     // MARK: - Mocks
 
     private final class DetailWordViewOutputMock: DetailWordViewOutput {
+        func viewLoaded() {
+        }
     }
 
 }

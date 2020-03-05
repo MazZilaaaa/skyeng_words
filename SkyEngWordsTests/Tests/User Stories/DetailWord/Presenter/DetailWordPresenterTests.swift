@@ -21,7 +21,8 @@ final class DetailWordPresenterTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        presenter = DetailWordPresenter()
+        let word = Word(id: 1, text: "word", meanings: nil)
+        presenter = DetailWordPresenter(word: word)
         presenter?.router = MockRouter()
         view = MockViewController()
         presenter?.view = view
@@ -43,6 +44,8 @@ final class DetailWordPresenterTest: XCTestCase {
     }
 
     private final class MockViewController: DetailWordViewInput {
+        func configure(with word: Word) {
+        }
     }
 
     private final class MockModuleOutput: DetailWordModuleOutput {

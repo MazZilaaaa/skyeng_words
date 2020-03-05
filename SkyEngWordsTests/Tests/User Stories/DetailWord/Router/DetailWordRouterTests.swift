@@ -36,6 +36,8 @@ final class DetailWordRouterTests: XCTestCase {
     // MARK: - Mocks
 
     private final class MockModuleTransitionable: ModuleTransitionable {
+        func popToRoot(animated: Bool) {
+        }
 
         func showModule(_ module: UIViewController) {
         }

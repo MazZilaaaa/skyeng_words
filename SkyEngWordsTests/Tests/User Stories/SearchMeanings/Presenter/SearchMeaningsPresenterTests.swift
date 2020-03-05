@@ -40,12 +40,28 @@ final class SearchMeaningsPresenterTest: XCTestCase {
     // MARK: - Mocks
 
     private final class MockRouter: SearchMeaningsRouterInput {
+        func showDetailWordModule(with word: Word) {
+        }
+
+        func showMessageModule(with message: String) {
+        }
+
     }
 
     private final class MockViewController: SearchMeaningsViewInput {
+        func setTitle(title: String?) {
+        }
+
+        func setState(state: LoadingState) {
+        }
+
+        func setWords(words: [Word]) {
+        }
     }
 
     private final class MockModuleOutput: SearchMeaningsModuleOutput {
+        func didSelectWord(word: Word) {
+        }
     }
 
 }
