@@ -39,6 +39,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
         items.removeAll()
         view?.setWords(words: items)
         guard let searchingWord = searchingWord, !searchingWord.isEmpty else {
+            view?.setState(state: .success)
             return
         }
 
