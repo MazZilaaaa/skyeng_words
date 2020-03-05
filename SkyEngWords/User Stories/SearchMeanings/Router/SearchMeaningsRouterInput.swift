@@ -9,4 +9,5 @@
 import Foundation
 
 protocol SearchMeaningsRouterInput {
+    func showDetailWordModule(with word: Word)
 }

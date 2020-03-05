@@ -44,6 +44,10 @@ UISearchBarDelegate {
     func setWords(words: [Word]) {
         dataSource?.items = words
     }
+    
+    func clearWords() {
+        dataSource?.items = []
+    }
 
     func didSelectWord(word: Word) {
         output?.didSelectWord(word: word)
@@ -61,7 +65,7 @@ UISearchBarDelegate {
         if searchText.isEmpty {
             search()
         } else {
-            self.perform(#selector(search), with: nil, afterDelay: 0.5)
+            self.perform(#selector(search), with: nil, afterDelay: 0.3)
         }
     }
 

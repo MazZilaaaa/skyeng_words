@@ -10,4 +10,5 @@ protocol SearchMeaningsViewInput: class {
     func setTitle(title: String?)
     func setState(state: LoadingState)
     func setWords(words: [Word])
+    func clearWords()
 }

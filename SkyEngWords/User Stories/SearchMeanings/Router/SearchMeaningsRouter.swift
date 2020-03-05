@@ -14,6 +14,9 @@ final class SearchMeaningsRouter: SearchMeaningsRouterInput {
 
     weak var view: ModuleTransitionable?
 
-	// MARK: - SearchMeaningsRouterInput
-
+    func showDetailWordModule(with word: Word) {
+        let detailWordConfigurator = DetailWordModuleConfigurator()
+        let detailWordView = detailWordConfigurator.configure(with: word)
+        view?.push(module: detailWordView, animated: true)
+    }
 }
