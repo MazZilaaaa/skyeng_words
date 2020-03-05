@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ServiceError : Error {
+enum ServiceError: Error {
     case emptyData
     case decode
     case loading

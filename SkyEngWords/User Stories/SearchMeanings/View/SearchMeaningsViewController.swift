@@ -38,7 +38,6 @@ final class SearchMeaningsViewController: UIViewController,
             self.perform(#selector(search), with: nil, afterDelay: 0.5)
         }
     }
-    
     @objc
     private func search() {
         if let searchText = searchBar.text {

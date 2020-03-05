@@ -16,7 +16,7 @@ final class AppConfigurator {
         router.showSearchMeaningsModule()
         let window = UIWindow()
         window.rootViewController = view
-        window.makeKeyAndVisible()        
+        window.makeKeyAndVisible()
         return window
     }
 }

@@ -8,7 +8,6 @@
 
 final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsModuleInput {
     
-
     // MARK: - Properties
 
     weak var view: SearchMeaningsViewInput?
@@ -17,6 +16,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     var service: IWordsService?
 
     // MARK: - SearchMeaningsViewOutput
+    
     func search(word: String) {
         if word.isEmpty {
             self.view?.setWords(words: [])
