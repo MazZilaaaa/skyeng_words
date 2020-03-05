@@ -92,6 +92,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
                 self.view?.setWords(words: self.items)
             case .failure(let error):
                 self.view?.setState(state: .failed)
+                self.router?.showMessageModule(with: error.localizedDescription)
             }
 
             self.isLoading = false

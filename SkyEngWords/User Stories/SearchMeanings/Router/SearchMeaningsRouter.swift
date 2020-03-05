@@ -19,4 +19,11 @@ final class SearchMeaningsRouter: SearchMeaningsRouterInput {
         let detailWordView = detailWordConfigurator.configure(with: word)
         view?.push(module: detailWordView, animated: true)
     }
+
+    func showMessageModule(with message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(cancelAction)
+        view?.presentModule(alertController, animated: true, completion: nil)
+    }
 }
