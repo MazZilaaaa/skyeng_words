@@ -43,6 +43,8 @@
 		A8F0B9BD24104A7C0038B1E9 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0B9BC24104A7C0038B1E9 /* Translation.swift */; };
 		C5EB8E4C078EC7750292C332 /* SearchMeaningsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32496A930C5E5DD3BCC413ED /* SearchMeaningsViewOutput.swift */; };
 		C90DF63A24114524008A8DCB /* WordsViewAdapterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF63924114524008A8DCB /* WordsViewAdapterOutput.swift */; };
+		C90DF63D2411554D008A8DCB /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DF63B2411554D008A8DCB /* LoadingCell.swift */; };
+		C90DF63E2411554D008A8DCB /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90DF63C2411554D008A8DCB /* LoadingCell.xib */; };
 		C9B2F3D52410E4D300C23BA6 /* SearchMeaningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */; };
 		C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */; };
 		C9B2F3D82410EC6900C23BA6 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */; };
@@ -146,6 +148,8 @@
 		B6E3F1FA766D1C026E548D39 /* SearchMeaningsModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleOutput.swift; sourceTree = "<group>"; };
 		C817B469E60778AB09311646 /* SearchMeaningsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchMeaningsModuleInput.swift; sourceTree = "<group>"; };
 		C90DF63924114524008A8DCB /* WordsViewAdapterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewAdapterOutput.swift; sourceTree = "<group>"; };
+		C90DF63B2411554D008A8DCB /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		C90DF63C2411554D008A8DCB /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		C9B2F3D32410E4D300C23BA6 /* SearchMeaningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeaningsViewController.swift; sourceTree = "<group>"; };
 		C9B2F3D42410E4D300C23BA6 /* SearchMeaningsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMeaningsViewController.xib; sourceTree = "<group>"; };
 		C9B2F3D72410EC6900C23BA6 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
@@ -449,6 +453,8 @@
 			isa = PBXGroup;
 			children = (
 				A8839947241018C500C59B30 /* .gitkeep */,
+				C90DF63B2411554D008A8DCB /* LoadingCell.swift */,
+				C90DF63C2411554D008A8DCB /* LoadingCell.xib */,
 			);
 			path = "Reusable Layer";
 			sourceTree = "<group>";
@@ -729,6 +735,7 @@
 				A8839960241018C500C59B30 /* swiftgen.yml in Resources */,
 				A883992C241018C500C59B30 /* .gitignore in Resources */,
 				A883992A241018C500C59B30 /* Podfile in Resources */,
+				C90DF63E2411554D008A8DCB /* LoadingCell.xib in Resources */,
 				C9B2F3D62410E4D300C23BA6 /* SearchMeaningsViewController.xib in Resources */,
 				A8839928241018C500C59B30 /* ci in Resources */,
 				A8839950241018C500C59B30 /* Assets.xcassets in Resources */,
@@ -864,6 +871,7 @@
 				FF5618200693AC04B6513EC3 /* SearchMeaningsPresenter.swift in Sources */,
 				C9B2F3ED24111EB300C23BA6 /* UITableViewCell+nib.swift in Sources */,
 				145FB02795B7A272E5CD1A81 /* SearchMeaningsModuleInput.swift in Sources */,
+				C90DF63D2411554D008A8DCB /* LoadingCell.swift in Sources */,
 				C9B2F3EA24111E9100C23BA6 /* WordTableViewCell.swift in Sources */,
 				A8F0B9BB24104A470038B1E9 /* Meaning.swift in Sources */,
 				1C85C740E2BF3F5B8403A923 /* SearchMeaningsModuleOutput.swift in Sources */,

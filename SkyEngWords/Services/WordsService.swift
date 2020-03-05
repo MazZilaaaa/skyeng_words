@@ -9,7 +9,11 @@
 import Foundation
 
 class WordsService: FetchService, IWordsService {
-    func fetchWords(word: String, _ completion: @escaping (Result<[Word], ServiceError>) -> Void) {
-        fetch(.searchWords(word), completion)
+    func fetchWords(
+        word: String,
+        page: Int,
+        pageSize: Int,
+        _ completion: @escaping (Result<[Word], ServiceError>) -> Void) {
+        fetch(.searchWords(searchString: word, offset: page, limit: pageSize), completion)
     }
 }

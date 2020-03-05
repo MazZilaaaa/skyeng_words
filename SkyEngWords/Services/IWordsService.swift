@@ -9,5 +9,9 @@
 import Foundation
 
 protocol IWordsService {
-    func fetchWords(word: String, _ completion: @escaping (Result<[Word], ServiceError>) -> Void)
+    func fetchWords(
+        word: String,
+        page: Int,
+        pageSize: Int,
+        _ completion: @escaping (Result<[Word], ServiceError>) -> Void)
 }

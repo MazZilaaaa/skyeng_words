@@ -10,4 +10,5 @@ import Foundation
 
 protocol WordsViewAdapterOutput {
     func didSelectWord(word: Word)
+    func endReached()
 }

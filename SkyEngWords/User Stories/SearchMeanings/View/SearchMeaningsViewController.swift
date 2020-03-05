@@ -19,7 +19,6 @@ UISearchBarDelegate {
 
     @IBOutlet weak private var searchBar: UISearchBar!
     @IBOutlet weak private var tableView: UITableView!
-    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +27,17 @@ UISearchBarDelegate {
         dataSource?.configure(tableView: tableView)
         output?.viewLoaded()
     }
+    
+    func setTitle(title: String?) {
+        self.title = title
+    }
 
     func setState(state: LoadingState) {
         switch state {
         case .loading:
-            activityIndicator.startAnimating()
+            dataSource?.isLoading = true
         case .success, .failed:
-            activityIndicator.stopAnimating()
+            dataSource?.isLoading = false
         }
     }
 
@@ -46,15 +49,19 @@ UISearchBarDelegate {
         output?.didSelectWord(word: word)
     }
 
+    func endReached() {
+        output?.endReached()
+    }
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let searchText = searchBar.text else {
             return
         }
-        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(searchTextChanged), object: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(search), object: nil)
         if searchText.isEmpty {
             search()
         } else {
-            self.perform(#selector(searchTextChanged), with: nil, afterDelay: 0.5)
+            self.perform(#selector(search), with: nil, afterDelay: 0.5)
         }
     }
 

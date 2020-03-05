@@ -15,11 +15,13 @@ enum API {
     }
 
     enum QueryKeys: String {
-        case wordSearch = "search"
+        case search = "search"
+        case page = "page"
+        case pageSize = "pageSize"
         case ids = "ids"
     }
 
-    case searchWords(_ searchString: String)
+    case searchWords(searchString: String, offset: Int, limit: Int)
     case meaningDetail(_ ids: String)
 }
 
@@ -54,8 +56,11 @@ extension API: TargetType {
 
     var task: Task {
         switch self {
-        case .searchWords(let searchString):
-            let parameters = [QueryKeys.wordSearch.rawValue: searchString]
+        case .searchWords(let searchString, let page, let pageSize):
+            var parameters: [String: Any] = [:]
+            parameters[QueryKeys.search.rawValue] = searchString
+            parameters[QueryKeys.page.rawValue] = page
+            parameters[QueryKeys.pageSize.rawValue] = pageSize
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case .meaningDetail(let id):
             let parameters = [QueryKeys.ids.rawValue: id]

@@ -15,36 +15,62 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     var output: SearchMeaningsModuleOutput?
     var service: IWordsService?
 
+    var page = 0
+    var pageSize = 20
+    var items = [Word]()
+    var searchingWord: String?
+    var isLoading = false
+
     // MARK: - SearchMeaningsViewOutput
 
     func viewLoaded() {
         view?.setState(state: .success)
+        view?.setTitle(title: "words")
+    }
+    func endReached() {
+        page += 1
+        loadWords()
     }
 
     func searchTextChanged(word: String) {
-        if word.isEmpty {
-            self.view?.setWords(words: [])
+        searchingWord = word
+        page = 0
+        items.removeAll()
+        loadWords()
+    }
+
+    func didSelectWord(word: Word) {
+    }
+
+    private func loadWords() {
+        guard !isLoading else {
+            return
+        }
+        guard let searchingWord = searchingWord, !searchingWord.isEmpty else {
+            view?.setState(state: .success)
+            view?.setWords(words: [])
             return
         }
 
         view?.setState(state: .loading)
-        service?.fetchWords(word: word, { [weak self] result in
+        isLoading = true
+        service?.fetchWords(word: searchingWord, page: page, pageSize: pageSize, { [weak self] result in
             guard let self = self else {
                 return
             }
 
             switch result {
             case .success(let words):
+                self.items.append(contentsOf: words)
                 self.view?.setState(state: .success)
-                self.view?.setWords(words: words)
+                self.view?.setWords(words: self.items)
             case .failure(let error):
                 print(error.localizedDescription)
                 self.view?.setState(state: .failed)
             }
-        })
-    }
 
-    func didSelectWord(word: Word) {
+            self.isLoading = false
+        })
     }
 
     // MARK: - SearchMeaningsModuleInput
