@@ -16,13 +16,21 @@ final class SearchMeaningsViewController: UIViewController,
     var dataSource: WordsDataSource?
     @IBOutlet weak private var searchBar: UISearchBar!
     @IBOutlet weak private var tableView: UITableView!
+    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
         dataSource = WordsDataSource(tableView: tableView)
         dataSource?.configure()
+        output?.viewLoaded()
     }
     func setState(state: LoadingState) {
+        switch state {
+        case .loading:
+            activityIndicator.startAnimating()
+        case .success, .failed:
+            activityIndicator.stopAnimating()
+        }
     }
     func setWords(words: [Word]) {
         dataSource?.words = words

@@ -7,5 +7,6 @@
 //
 
 protocol SearchMeaningsViewOutput {
+    func viewLoaded()
     func search(word: String)
 }
