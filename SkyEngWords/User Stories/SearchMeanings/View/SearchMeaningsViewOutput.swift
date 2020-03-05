@@ -10,5 +10,5 @@ protocol SearchMeaningsViewOutput {
     func viewLoaded()
     func searchTextChanged(word: String)
     func didSelectWord(word: Word)
-    func endReached()
+    func loadMoreSearchResults()
 }

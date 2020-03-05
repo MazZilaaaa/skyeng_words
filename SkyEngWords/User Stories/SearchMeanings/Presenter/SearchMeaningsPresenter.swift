@@ -27,15 +27,16 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
         view?.setState(state: .success)
         view?.setTitle(title: "words")
     }
-    func endReached() {
-        page += 1
-        loadWords()
-    }
 
     func searchTextChanged(word: String) {
         searchingWord = word
         page = 0
         items.removeAll()
+        loadWords()
+    }
+
+    func loadMoreSearchResults() {
+        page += 1
         loadWords()
     }
 

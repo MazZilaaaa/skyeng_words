@@ -50,7 +50,7 @@ UISearchBarDelegate {
     }
 
     func endReached() {
-        output?.endReached()
+        output?.loadMoreSearchResults()
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
