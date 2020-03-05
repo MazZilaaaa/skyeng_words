@@ -16,7 +16,8 @@ final class SearchMeaningsModuleConfiguratorTests: XCTestCase {
     func testThatViewControllerLoadsCorrectly() {
         if UIStoryboard(name: String(describing: SearchMeaningsViewController.self),
                         bundle: Bundle.main).instantiateInitialViewController() == nil {
-            XCTFail("Can't load SearchMeaningsViewController from storyboard, check that controller is initial view controller")
+            XCTFail("Can't load SearchMeaningsViewController from storyboard," +
+                "check that controller is initial view controller")
         }
     }
 
