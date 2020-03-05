@@ -7,6 +7,7 @@ def utils
     pod 'SwiftGen', '~> 6.1.0'
     pod 'SwiftLint', '~> 0.30.1'
     pod 'Moya', '~> 14.0.0'
+    pod 'Kingfisher', '~> 4.10.1'
 end
 
 def surf_utils

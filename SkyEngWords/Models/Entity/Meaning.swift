@@ -12,6 +12,12 @@ struct Meaning: Codable {
     let id: Int?
     let partOfSpeechCode: String?
     let translation: Translation?
+    let transcription: String?
     let previewUrl: String?
     let imageUrl: String?
+    
+    var previewImageUrl: URL? {
+        guard let previewUrl = previewUrl else { return nil }
+        return URL(string: "https:\(previewUrl)")
+    }
 }
