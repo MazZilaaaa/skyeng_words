@@ -58,21 +58,6 @@ UISearchBarDelegate {
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard let searchText = searchBar.text else {
-            return
-        }
-        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(search), object: nil)
-        if searchText.isEmpty {
-            search()
-        } else {
-            self.perform(#selector(search), with: nil, afterDelay: 0.3)
-        }
-    }
-
-    @objc
-    private func search() {
-        if let searchText = searchBar.text {
-            output?.searchTextChanged(word: searchText)
-        }
+        output?.searchTextChanged(word: searchText)
     }
 }

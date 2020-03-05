@@ -24,6 +24,7 @@ final class DetailWordViewController: UIViewController, DetailWordViewInput, Mod
 
     // MARK: - DetailWordViewInput
     func configure(with word: Word) {
+        title = word.text
     }
 
 }

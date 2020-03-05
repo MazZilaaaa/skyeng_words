@@ -30,8 +30,13 @@ class FetchService: IFetchService {
                     completion(.failure(.decode))
                 }
             case .failure(let error):
-                print(error)
-                completion(.failure(.loading))
+                switch error {
+                case .underlying:
+                    completion(.failure(.canceled))
+                default:
+                    print(error)
+                    completion(.failure(.loading))
+                }
             }
         }
     }

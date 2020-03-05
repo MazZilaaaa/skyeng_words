@@ -6,6 +6,8 @@
 //  Copyright © 2020 Alexandr. All rights reserved.
 //
 
+import Dispatch
+
 final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsModuleInput {
 
     // MARK: - Properties
@@ -15,12 +17,14 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     var output: SearchMeaningsModuleOutput?
     var service: IWordsService?
 
-    var page = 0
+    var currentPage = 0
     var pageSize = 20
     var hasOtherItems = true
     var items = [Word]()
     var searchingWord: String?
     var isLoading = false
+
+    var searchingWorkItem: DispatchWorkItem?
 
     // MARK: - SearchMeaningsViewOutput
 
@@ -30,52 +34,66 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     }
 
     func searchTextChanged(word: String) {
+        searchingWorkItem?.cancel()
         searchingWord = word
-        page = 0
-        hasOtherItems = true
         items.removeAll()
-        view?.clearWords()
-        loadWords()
+        view?.setWords(words: items)
+        guard let searchingWord = searchingWord, !searchingWord.isEmpty else {
+            return
+        }
+
+        let currentWorkItem = DispatchWorkItem {
+            self.search(by: searchingWord, initially: true)
+        }
+
+        searchingWorkItem = currentWorkItem
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2,
+                                      execute: currentWorkItem)
     }
 
     func loadMoreSearchResults() {
-        loadWords()
+        if let searchingWord = searchingWord, !isLoading {
+            self.search(by: searchingWord)
+        }
     }
 
     func didSelectWord(word: Word) {
         router?.showDetailWordModule(with: word)
     }
 
-    private func loadWords() {
-        guard hasOtherItems, !isLoading else {
-            return
-        }
-        guard let searchingWord = searchingWord, !searchingWord.isEmpty else {
-            view?.setState(state: .success)
-            view?.clearWords()
+    private func search(by word: String, initially: Bool = false) {
+        guard hasOtherItems || initially else {
             return
         }
 
-        view?.setState(state: .loading)
         isLoading = true
-        service?.fetchWords(word: searchingWord, page: page, pageSize: pageSize, { [weak self] result in
+        view?.setState(state: .loading)
+        let nextPage = initially ? 0 : currentPage + 1
+        print("find by \(word)")
+        service?.fetchWords(word: word, page: nextPage, pageSize: pageSize, { [weak self] result in
             guard let self = self else {
                 return
             }
 
             switch result {
             case .success(let words):
+                print("success by \(word)")
                 self.hasOtherItems = words.count == self.pageSize
-                self.page = self.hasOtherItems ? self.page + 1 : self.page
+                self.currentPage = nextPage
                 self.items.append(contentsOf: words)
                 self.view?.setState(state: .success)
                 self.view?.setWords(words: self.items)
+                self.isLoading = false
             case .failure(let error):
-                print(error.localizedDescription)
-                self.view?.setState(state: .failed)
+                switch error {
+                case .canceled:
+                    break
+                default:
+                    self.view?.setState(state: .failed)
+                    self.isLoading = false
+                }
             }
 
-            self.isLoading = false
         })
     }
 
