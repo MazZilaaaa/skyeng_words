@@ -35,6 +35,7 @@ final class MeaningsDataSource: NSObject {
         tableView.estimatedRowHeight = 120
         tableView.showsVerticalScrollIndicator = false
         tableView.register(MeaningTableViewCell.nib, forCellReuseIdentifier: MeaningTableViewCell.identifier)
+        tableView.tableFooterView = UIView()
     }
 }
 
@@ -60,6 +61,10 @@ extension MeaningsDataSource: UITableViewDataSource {
         meaningCell.configure(with: meaning)
 
         return meaningCell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "значения"
     }
 }
 

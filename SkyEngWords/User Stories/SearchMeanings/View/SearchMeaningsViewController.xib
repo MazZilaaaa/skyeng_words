@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchMeaningsViewController" customModule="SkyEngWords" customModuleProvider="target">
             <connections>
-                <outlet property="searchBar" destination="EIo-3R-3G1" id="EK9-4l-u9M"/>
                 <outlet property="tableView" destination="UEQ-Sc-UB9" id="gG5-mG-M1G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,22 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EIo-3R-3G1">
-                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Sc-UB9">
-                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="EIo-3R-3G1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nc7-TZ-ecH"/>
-                <constraint firstItem="EIo-3R-3G1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Qv9-m0-JJG"/>
-                <constraint firstItem="UEQ-Sc-UB9" firstAttribute="top" secondItem="EIo-3R-3G1" secondAttribute="bottom" id="gFO-TI-HTL"/>
                 <constraint firstItem="UEQ-Sc-UB9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="il7-EP-xqr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EIo-3R-3G1" secondAttribute="trailing" id="nHR-7T-owQ"/>
+                <constraint firstItem="UEQ-Sc-UB9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nsh-u1-QiA"/>
                 <constraint firstAttribute="bottom" secondItem="UEQ-Sc-UB9" secondAttribute="bottom" id="xIP-QO-Exg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UEQ-Sc-UB9" secondAttribute="trailing" id="zbe-6Q-cXl"/>
             </constraints>

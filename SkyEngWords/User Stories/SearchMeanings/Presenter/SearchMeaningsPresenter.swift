@@ -30,10 +30,14 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
 
     func viewLoaded() {
         view?.setState(state: .success)
-        view?.setTitle(title: "words")
+        view?.setTitle(title: "слова")
     }
 
     func searchTextChanged(word: String) {
+        if let searcingWord = searchingWord, searcingWord == word {
+            return
+        }
+
         searchingWorkItem?.cancel()
         searchingWord = word
         items.removeAll()
@@ -74,7 +78,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
             guard let self = self else {
                 return
             }
-            
+
             if self.searchingWord != word {
                 return
             }

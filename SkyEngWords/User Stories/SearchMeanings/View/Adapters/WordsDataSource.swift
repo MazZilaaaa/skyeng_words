@@ -39,6 +39,7 @@ class WordsDataSource: NSObject {
         tableView.showsVerticalScrollIndicator = false
         tableView.register(WordTableViewCell.nib, forCellReuseIdentifier: WordTableViewCell.identifier)
         tableView.register(LoadingCell.nib, forCellReuseIdentifier: LoadingCell.identifier)
+        tableView.tableFooterView = UIView()
     }
 }
 
@@ -86,6 +87,10 @@ extension WordsDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         output.didSelectWord(word: items[indexPath.row])
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        output.willBeginDragging()
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

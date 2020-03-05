@@ -8,28 +8,44 @@
 
 import UIKit
 
-final class SearchMeaningsViewController: UIViewController,
-    SearchMeaningsViewInput,
-    ModuleTransitionable,
-    WordsViewAdapterOutput,
-UISearchBarDelegate {
-
+final class SearchMeaningsViewController: UIViewController, ModuleTransitionable {
     var output: SearchMeaningsViewOutput?
     var dataSource: WordsDataSource?
+    var searchController: UISearchController?
 
-    @IBOutlet weak private var searchBar: UISearchBar!
     @IBOutlet weak private var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        searchController = UISearchController(searchResultsController: nil)
+        searchController?.obscuresBackgroundDuringPresentation = false
+        searchController?.searchBar.placeholder = "введите слово"
+        searchController?.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        
         dataSource = WordsDataSource(output: self)
         dataSource?.configure(tableView: tableView)
         output?.viewLoaded()
     }
-    
+
+    func didSelectWord(word: Word) {
+        output?.didSelectWord(word: word)
+    }
+
+    func endReached() {
+        output?.loadMoreSearchResults()
+    }
+}
+
+extension SearchMeaningsViewController: SearchMeaningsViewInput {
     func setTitle(title: String?) {
         self.title = title
+    }
+
+    func setWords(words: [Word]) {
+        dataSource?.items = words
     }
 
     func setState(state: LoadingState) {
@@ -40,24 +56,19 @@ UISearchBarDelegate {
             dataSource?.isLoading = false
         }
     }
+}
 
-    func setWords(words: [Word]) {
-        dataSource?.items = words
+extension SearchMeaningsViewController: WordsViewAdapterOutput {
+    func willBeginDragging() {
+        searchController?.searchBar.resignFirstResponder()
     }
-    
-    func clearWords() {
-        dataSource?.items = []
-    }
+}
 
-    func didSelectWord(word: Word) {
-        output?.didSelectWord(word: word)
-    }
-
-    func endReached() {
-        output?.loadMoreSearchResults()
-    }
-
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        output?.searchTextChanged(word: searchText)
+extension SearchMeaningsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        if let text = searchController.searchBar.text {
+            output?.searchTextChanged(word: text)
+        }
     }
 }
