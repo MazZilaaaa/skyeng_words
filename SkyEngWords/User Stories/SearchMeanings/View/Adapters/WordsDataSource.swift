@@ -23,7 +23,7 @@ class WordsDataSource: NSObject {
         }
     }
 
-    private let output: WordsViewAdapterOutput
+    private unowned let output: WordsViewAdapterOutput
 
     init(output: WordsViewAdapterOutput) {
         self.output = output

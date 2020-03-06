@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol WordsViewAdapterOutput {
+protocol WordsViewAdapterOutput: AnyObject {
     func didSelectWord(word: Word)
     func endReached()
     func willBeginDragging()
