@@ -17,7 +17,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
     var output: SearchMeaningsModuleOutput?
     var service: IWordsService?
 
-    var currentPage = 0
+    var currentPage = 1
     var pageSize = 20
     var hasOtherItems = true
     var items = [Word]()
@@ -40,6 +40,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
 
         searchingWorkItem?.cancel()
         searchingWord = word
+        currentPage = 1
         items.removeAll()
         view?.setWords(words: items)
         guard let searchingWord = searchingWord, !searchingWord.isEmpty else {
@@ -73,7 +74,7 @@ final class SearchMeaningsPresenter: SearchMeaningsViewOutput, SearchMeaningsMod
 
         isLoading = true
         view?.setState(state: .loading)
-        let nextPage = initially ? 0 : currentPage + 1
+        let nextPage = initially ? 1 : currentPage + 1
         service?.fetchWords(word: word, page: nextPage, pageSize: pageSize, { [weak self] result in
             guard let self = self else {
                 return
