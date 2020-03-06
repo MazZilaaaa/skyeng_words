@@ -20,7 +20,7 @@ final class MeaningsDataSource: NSObject {
         }
     }
 
-    private let output: MeaningsViewAdapterOutput
+    private unowned let output: MeaningsViewAdapterOutput
 
     init(output: MeaningsViewAdapterOutput) {
         self.output = output

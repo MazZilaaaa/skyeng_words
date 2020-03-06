@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol MeaningsViewAdapterOutput {
+protocol MeaningsViewAdapterOutput: AnyObject {
     func didSelectMeaning(meaning: Meaning)
 }
